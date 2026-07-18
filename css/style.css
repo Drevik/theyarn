@@ -1,5 +1,5 @@
 /* The Yarn — Affiliate Site Styles */
-/* Design: Clean, warm, trustworthy. No corporate blue. */
+/* Design: Warm, narrative, trustworthy. Thread/yarn motifs woven throughout. */
 
 :root {
     --primary: #2d6a4f;
@@ -16,6 +16,8 @@
     --shadow-lg: 0 4px 20px rgba(0,0,0,0.12);
     --radius: 8px;
     --max-width: 1200px;
+    --thread: rgba(45,106,79,0.06);
+    --thread-accent: rgba(212,163,115,0.1);
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -26,6 +28,10 @@ body {
     color: var(--text);
     background: var(--bg);
     -webkit-font-smoothing: antialiased;
+    background-image: 
+        radial-gradient(circle at 20% 50%, var(--thread) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, var(--thread-accent) 0%, transparent 40%);
+    background-attachment: fixed;
 }
 
 /* ── Header ── */
@@ -36,6 +42,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
+    box-shadow: 0 1px 4px rgba(27,67,50,0.08);
 }
 
 nav {
@@ -53,6 +60,18 @@ nav {
     text-decoration: none;
     font-family: 'Georgia', serif;
     letter-spacing: -0.5px;
+    position: relative;
+}
+
+.logo::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    border-radius: 1px;
 }
 
 .logo:hover { color: var(--primary); }
@@ -79,12 +98,32 @@ nav a:hover { color: var(--primary); }
     color: var(--white);
     text-align: center;
     padding: 5rem 2rem 4rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 40px,
+        rgba(255,255,255,0.02) 40px,
+        rgba(255,255,255,0.02) 42px
+    );
+    pointer-events: none;
 }
 
 .hero h1 {
     font-size: 2.8rem;
     margin-bottom: 1rem;
     line-height: 1.2;
+    position: relative;
 }
 
 .hero p {
@@ -92,6 +131,7 @@ nav a:hover { color: var(--primary); }
     opacity: 0.9;
     max-width: 600px;
     margin: 0 auto;
+    position: relative;
 }
 
 .hero-cta {
@@ -105,6 +145,7 @@ nav a:hover { color: var(--primary); }
     border-radius: var(--radius);
     font-size: 1rem;
     transition: transform 0.2s, background 0.2s;
+    position: relative;
 }
 
 .hero-cta:hover {
@@ -120,7 +161,14 @@ main {
 }
 
 section { margin-bottom: 3rem; }
-section h2 { font-size: 1.75rem; margin-bottom: 1rem; color: var(--primary-dark); }
+section h2 { 
+    font-size: 1.75rem; 
+    margin-bottom: 1rem; 
+    color: var(--primary-dark);
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--accent);
+    display: inline-block;
+}
 
 /* ── Category Grid ── */
 .category-grid {
@@ -138,11 +186,30 @@ section h2 { font-size: 1.75rem; margin-bottom: 1rem; color: var(--primary-dark)
     color: var(--text);
     transition: transform 0.2s, box-shadow 0.2s;
     border-left: 4px solid var(--primary);
+    position: relative;
+    overflow: hidden;
+}
+
+.category-card::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 80px;
+    height: 80px;
+    background: var(--accent-light);
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s;
 }
 
 .category-card:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-lg);
+}
+
+.category-card:hover::before {
+    opacity: 1;
 }
 
 .category-card h3 { color: var(--primary-dark); margin-bottom: 0.5rem; font-size: 1.2rem; }
@@ -162,11 +229,29 @@ section h2 { font-size: 1.75rem; margin-bottom: 1rem; color: var(--primary-dark)
     border-radius: var(--radius);
     box-shadow: var(--shadow);
     transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+}
+
+.article-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 1.5rem;
+    right: 1.5rem;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    border-radius: 0 0 4px 4px;
+    opacity: 0;
+    transition: opacity 0.2s;
 }
 
 .article-card:hover {
     transform: translateY(-3px);
     box-shadow: var(--shadow-lg);
+}
+
+.article-card:hover::after {
+    opacity: 1;
 }
 
 .article-card .category-tag {
@@ -263,6 +348,7 @@ section h2 { font-size: 1.75rem; margin-bottom: 1rem; color: var(--primary-dark)
     border-radius: var(--radius);
     padding: 1.5rem;
     margin: 1.5rem 0;
+    border-left: 3px solid var(--accent);
 }
 
 .product-box h3 {
@@ -394,10 +480,29 @@ section h2 { font-size: 1.75rem; margin-bottom: 1rem; color: var(--primary-dark)
     color: var(--white);
     text-align: center;
     padding: 3rem 2rem;
+    position: relative;
+    overflow: hidden;
 }
 
-.category-hero h1 { font-size: 2rem; margin-bottom: 0.5rem; }
-.category-hero p { opacity: 0.9; font-size: 1.1rem; }
+.category-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 40px,
+        rgba(255,255,255,0.02) 40px,
+        rgba(255,255,255,0.02) 42px
+    );
+    pointer-events: none;
+}
+
+.category-hero h1 { font-size: 2rem; margin-bottom: 0.5rem; position: relative; }
+.category-hero p { opacity: 0.9; font-size: 1.1rem; position: relative; }
 
 /* ── Footer ── */
 footer {
@@ -405,6 +510,17 @@ footer {
     color: var(--white);
     padding: 3rem 2rem 1.5rem;
     margin-top: 4rem;
+    position: relative;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary), var(--accent), var(--primary));
 }
 
 .footer-inner {
@@ -511,6 +627,25 @@ footer {
 
 .value-card h3 { color: var(--primary-dark); margin-bottom: 0.5rem; }
 .value-card p { color: var(--text-light); font-size: 0.95rem; }
+
+/* ── Hidden Thread (ARG Entry Point) ── */
+/* A single period at the end of the About page description.
+   Identical to surrounding text. Only visible on careful inspection.
+   On hover: barely perceptible shift. On click: the thread unravels. */
+.thread-pull {
+    color: inherit;
+    text-decoration: none;
+    cursor: text;
+    transition: color 0.8s ease;
+}
+
+.thread-pull:hover {
+    color: var(--primary);
+}
+
+.thread-pull:active {
+    color: var(--accent);
+}
 
 /* ── Responsive ── */
 @media (max-width: 900px) {

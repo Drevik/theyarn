@@ -26,5 +26,4 @@ Allow: /
 User-agent: Applebot-Extended
 Disallow: /
 
-# Sitemap (add when available)
-# Sitemap: https://theyarn.pages.dev/sitemap.xml
+Sitemap: https://theyarnreview.com/sitemap.xml

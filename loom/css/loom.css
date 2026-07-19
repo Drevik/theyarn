@@ -1,0 +1,389 @@
+:root {
+    /* Surface Colors (Yarn) */
+    --ink:#1a1a1a;
+    --ink-light:#4a4a4a;
+    --ink-muted:#7a7a7a;
+    --cream:#faf8f2;
+    --cream-dark:#f0ece0;
+    --white:#ffffff;
+    --sage:#2d6a4f;
+    --sage-dark:#1b4332;
+    --sage-light:#52b788;
+    --sage-pale:#d8f3dc;
+    --gold:#c8952e;
+    --gold-light:#faedcd;
+    --gold-pale:#fdf6e3;
+    --border:#e0dcd0;
+
+    /* Transition (Origin Loom) */
+    --void-black:#0A0A0F;
+    --deep-navy:#0F1420;
+    --origin-gold:#D4A853;
+    --thread-amber:#F5A623;
+    --copper-light:#E8B87D;
+    --discovery-white:#FAFAFA;
+    --cream-lm:#F5F0E6;
+
+    /* Occult */
+    --mystic-indigo:#2E0F5E;
+    --hidden-violet:#4A1C6E;
+
+    /* Typography */
+    --font-serif: Georgia,serif;
+    --font-sans: system-ui,sans-serif;
+    --font-mono: SF Mono,Fira Code,Consolas,monospace;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    transition: background-color 0.8s, color 0.8s;
+    padding-top: 56px; /* Space for fixed header */
+}
+
+/* --- HEADER & GLOBAL ELEMENTS --- */
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    z-index: 50;
+    padding: 1rem 2rem;
+}
+
+/* --- GRIDS & LAYOUTS --- */
+.hero-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Text left, visual right */
+    gap: 40px;
+    padding: 4rem 2rem;
+}
+
+.article-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 2rem;
+}
+
+.article-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.article-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* shadow-lg */
+}
+
+/* Trust Bar & Methodology */
+.trust-bar {
+    background: var(--sage-dark);
+    color: var(--cream);
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.methodology-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 3rem 2rem;
+}
+
+.step-card h3 {
+    color: var(--sage);
+}
+
+/* CTA Bar */
+.cta-bar {
+    background: var(--cream-lm);
+    padding: 3rem 2rem;
+    text-align: center;
+    border-top: 1px dashed var(--border);
+    border-bottom: 1px dashed var(--border);
+}
+
+.cta-button {
+    background-color: var(--gold);
+    color: var(--ink);
+    padding: 0.8rem 2rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+/* Comparison Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+}
+
+th {
+    background: var(--sage-dark);
+    color: var(--cream);
+    padding: 1rem;
+    text-align: left;
+}
+
+td, th {
+    border: 1px solid var(--border);
+    padding: 0.8rem;
+}
+
+/* Product Boxes & FAQ */
+.product-box {
+    background: var(--white);
+    border-left: 4px solid var(--gold);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.faq-item {
+    border-left: 3px solid var(--sage);
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+/* Sidebar/Index */
+.sidebar-card, .orphaned-index {
+    background: var(--white);
+    border: 1px solid var(--border);
+    padding: 1rem;
+    margin-bottom: 20px;
+}
+
+/* --- ARG STYLING AND UTILITIES --- */
+.thread-pull {
+    color: inherit;
+    text-decoration: none;
+    cursor: text;
+    transition: color 0.8s;
+    font-weight: bold;
+}
+.thread-pull:hover {
+    color: var(--sage);
+}
+.thread-pull:active {
+    color: var(--gold);
+}
+
+/* Origin Point Animation */
+.origin-point {
+    position: fixed;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: var(--origin-gold);
+    opacity: 0.03;
+    z-index: 9999;
+    animation: origin-pulse 3s ease-in-out infinite;
+}
+
+@keyframes origin-pulse {
+    0%, 100% { opacity: 0.03; transform: scale(1); }
+    50% { opacity: 0.08; transform: scale(1.5); }
+}
+
+/* Hidden/Revealed Void Text */
+.hidden-void-text {
+    color: var(--cream);
+    background: transparent;
+    transition: color 0.3s;
+}
+.hidden-void-text.revealed {
+    color: var(--ink);
+}
+.hidden-void-text::selection {
+    background: var(--sage-pale);
+    color: var(--ink);
+}
+
+/* Dead Link Styling */
+.dead-directory-link {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px dotted var(--ink-muted);
+}
+
+/* Orphaned Index Highlighting */
+.orphaned-index .term {
+    cursor: pointer;
+    transition: color 0.2s;
+    display: inline-block; /* Important for hover area */
+}
+.orphaned-index .term:hover {
+    color: var(--sage);
+}
+.orphaned-index .term.acrostic-highlight {
+    color: var(--gold);
+    font-weight: 700;
+}
+
+/* Emerging Grid Overlay */
+.emerging-grid {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 100;
+    opacity: 0;
+    transition: opacity 0.5s, background 0.5s;
+    /* Defines the repeating grid pattern */
+    background: repeating-linear-gradient(0deg, transparent, transparent 49px, var(--origin-gold) 49px, var(--origin-gold) 50px), repeating-linear-gradient(90deg, transparent, transparent 49px, var(--origin-gold) 49px, var(--origin-gold) 50px);
+}
+
+/* Terminal Overlay */
+.terminal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--void-black);
+    color: var(--origin-gold);
+    font-family: var(--font-mono);
+    z-index: 10000;
+    display: none;
+    padding: 2rem;
+    overflow: hidden;
+}
+.terminal-overlay.active {
+    display: block;
+}
+
+/* --- PHASE OVERRIDES STYLES --- */
+
+/* Phase 2: Initial Flicker and Origin Spread */
+body.phase-2 {
+    background: var(--cream); /* Still cream base, but elements flicker */
+}
+/* Article card flickering effect (simulated by slight shadow/transform changes) */
+.article-card[data-flicker="true"] {
+    animation: article-flicker 1s infinite alternate;
+}
+
+@keyframes article-flicker {
+    0% { transform: translateY(0px); box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); }
+    25% { transform: translateY(-1px); box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1); background: var(--cream-dark); }
+    75% { transform: translateY(-1.5px); box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); border-color: var(--sage-light); }
+    100% { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); }
+}
+
+/* Phase 3: Deepening and Jagged Borders */
+body.phase-3 {
+    background: linear-gradient(to bottom right, var(--cream), var(--deep-navy));
+    color: var(--ink-light);
+}
+
+/* Jagged/Flickering Gold Borders (Applied to elements with gold borders) */
+[style*="var(--gold)"] {
+    box-shadow: 0 0 5px rgba(212, 168, 83, 0.4), inset 0 0 5px rgba(212, 168, 83, 0.2);
+}
+
+/* Phase 4: Void Black and Glitching */
+body.phase-4 {
+    background: var(--void-black);
+    color: var(--discovery-white);
+}
+
+/* General text color shift for phase 4 */
+body.phase-4 * {
+    color: var(--discovery-white) !important;
+}
+
+/* Glitching Serif Text (Applies to elements using --font-serif) */
+.glitch-text {
+    animation: glitch-loop 1s infinite alternate linear;
+    display: inline-block;
+}
+@keyframes glitch-loop {
+    0% { text-shadow: 2px 0 red, -2px 0 blue; transform: translate(0); }
+    33% { text-shadow: -3px 0 #fff, 3px 0 #f91; transform: translate(-1px, 1px); }
+    66% { text-shadow: 1px 0 red, -1px 0 blue; transform: translate(1px, -1px); }
+    100% { text-shadow: 3px 0 #fff, -3px 0 #f91; transform: translate(0); }
+}
+
+/* Phase 5: Full Occult Immersion */
+body.phase-5 {
+    background: var(--void-black);
+    color: var(--origin-gold);
+}
+
+body.phase-5 * {
+    color: var(--origin-gold) !important; /* Default visible text color */
+}
+/* Specific overrides for phase 5 colors */
+body.phase-5 .thread-pull, body.phase-5 h1, body.phase-5 p {
+    color: var(--hidden-violet) !important;
+}
+
+/* --- MEDIA QUERIES (RESPONSIVE DESIGN) --- */
+
+/* Tablet/Small Desktop (1024px) */
+@media screen and (max-width: 1024px) {
+    .article-card-container {
+        grid-template-columns: repeat(2, 1fr); /* 2-col cards */
+    }
+}
+
+/* Medium Desktop/Laptop (900px) */
+@media screen and (max-width: 900px) {
+    .hero-grid {
+        grid-template-columns: 1fr; /* Single column hero */
+        gap: 30px;
+        padding: 2rem;
+    }
+
+    .article-card-container {
+        grid-template-columns: repeat(2, 1fr); /* 2-col cards (slightly smaller) */
+    }
+}
+
+/* Mobile Devices (768px) */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 1rem;
+    }
+    .hero-grid, .article-card-container {
+        grid-template-columns: 1fr; /* Single column hero/cards */
+        gap: 20px;
+        padding: 1.5rem;
+    }
+
+    .methodology-grid {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* Compact Mobile (480px) */
+@media screen and (max-width: 480px) {
+    header {
+        padding: 1rem 0.5rem;
+    }
+    .article-card-container, .hero-grid {
+        padding: 1rem;
+    }
+
+    .cta-button {
+        display: block; /* Full width button */
+        width: 90%;
+        margin: 0 auto;
+    }
+}

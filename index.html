@@ -4,193 +4,383 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Yarn — Honest Product Recommendations</title>
+    <meta name="google-site-verification" content="8-3dj0rDpFyj4trHxNwLdWZQxQTZPQkQ9w">
     <meta name="description" content="Thoroughly researched product recommendations and buying guides. We test, compare, and recommend so you don't have to.">
     
     <meta property="og:title" content="The Yarn — Honest Product Recommendations">
-    <meta property="og:description" content="Thoroughly researched product recommendations and buying guides.">
+    <meta property="og:description" content="Thoroughly researched buying guides — no fluff, no spin, just the details that matter.">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="The Yarn">
+    <meta property="og:image" content="https://theyarnreview.com/img/best-mechanical-keyboards-hero.png">
     
     <link rel="canonical" href="https://theyarnreview.com/">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/loom/css/loom.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "The Yarn",
+      "url": "https://theyarnreview.com/",
+      "description": "Thoroughly researched product recommendations and buying guides.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://theyarnreview.com/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
 </head>
 <body>
-    <header>
-        <nav>
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <header class="site-header">
+        <div class="header-inner">
             <a href="/" class="logo">The Yarn</a>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="/home-kitchen/">Home & Kitchen</a></li>
-                <li><a href="/tech-gadgets/">Tech & Gadgets</a></li>
+                <li><a href="/tech-gadgets/">Tech</a></li>
                 <li><a href="/wellness/">Wellness</a></li>
-                <li><a href="/sports-attire/">Sports Attire</a></li>
-                <li><a href="/video-game-deals/">Video Game Deals</a></li>
-                <li><a href="/knitting-yarn-beginners/">Knitting & Crafts</a></li>
-                <li><a href="/fashion-accessories/">Fashion & Accessories</a></li>
+                <li><a href="/sports-attire/">Sports</a></li>
+                <li><a href="/fashion-accessories/">Fashion</a></li>
                 <li><a href="/about/">About</a></li>
             </ul>
-        </nav>
+        </div>
     </header>
 
+    <!-- Trust Bar — instant credibility -->
+    <div class="trust-bar">
+        <div class="trust-bar-inner">
+            <span class="trust-item">✓ <strong>No sponsored picks</strong></span>
+            <span class="trust-item">✓ <strong>Real product testing</strong></span>
+            <span class="trust-item">✓ <strong>Honest downsides</strong></span>
+            <span class="trust-item">✓ <strong>Updated monthly</strong></span>
+        </div>
+    </div>
+
+    <!-- Hero: Editorial Decision Surface — leads with the best pick -->
     <section class="hero">
-        <h1>We Test. You Decide.</h1>
-        <p>Honest, thoroughly researched buying guides — no fluff, no spin, just the details that matter.</p>
-        <a href="#latest-guides" class="hero-cta">Browse Guides</a>
+        <div class="hero-inner">
+            <div class="hero-text">
+                <h1>We test everything.<br>You pick the right one.</h1>
+                <p>Real research, honest comparisons, and clear recommendations — no affiliate bias, no filler. Every guide is based on <span class="thread-pull" style="cursor:default;">hands-on testing</span> and verified owner reviews.</p>
+                <div class="hero-cta-group">
+                    <a href="#latest-guides" class="btn-primary">Browse All Guides →</a>
+                    <a href="#how-we-test" class="btn-secondary">Our Method</a>
+                </div>
+            </div>
+            <div class="best-pick">
+                <span class="best-pick-badge">🏆 Best Overall</span>
+                <h3>HyperX Cloud III</h3>
+                <p>The best budget gaming headset we've tested — great sound, surprisingly clear mic, and comfortable for hours. Under $80.</p>
+                <a href="/best-budget-gaming-headsets/" class="best-pick-link">Read our full pick →</a>
+            </div>
+        </div>
     </section>
 
-    <main>
+    <main id="main">
+        <!-- Latest Guides — card grid with images and pick badges -->
         <section id="latest-guides">
-            <h2>Latest Guides</h2>
+            <div class="section-header">
+                <h2>Latest Guides</h2>
+                <a href="#categories">All categories →</a>
+            </div>
             <div class="article-grid">
                 <div class="article-card">
-                    <span class="category-tag">Home & Kitchen</span>
-                    <h3><a href="/robot-vacuums-pet-hair/">Best Robot Vacuums for Pet Hair</a></h3>
-                    <p>Pet hair doesn't stand a chance. We compared the top robot vacuums that actually pick up fur, navigate around pet bowls, and keep your floors clean.</p>
-                    <a href="/robot-vacuums-pet-hair/" class="read-more">Read the guide →</a>
+                    <img src="/img/best-budget-gaming-headsets-hero.png" alt="Budget gaming headsets" class="card-image" loading="lazy">
+                    <span class="card-pick">Best Pick</span>
+                    <div class="card-body">
+                        <span class="card-tag">Video Game Deals</span>
+                        <h3><a href="/best-budget-gaming-headsets/">Best Budget Gaming Headsets Under $100</a></h3>
+                        <p>Gaming headsets under $100 that don't sound cheap. Tested for comfort, mic quality, and durability.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/best-budget-gaming-headsets/" class="read-link">Read guide →</a>
+                    </div>
                 </div>
+
                 <div class="article-card">
-                    <span class="category-tag">Home & Kitchen</span>
-                    <h3><a href="/standing-desks-remote/">Standing Desks for Remote Workers</a></h3>
-                    <p>Your desk is the foundation of your home office. We tested standing desks for stability, motor quality, and real-world adjustability.</p>
-                    <a href="/standing-desks-remote/" class="read-more">Read the guide →</a>
+                    <img src="/img/robot-vacuums-hero.png" alt="Robot vacuums for pet hair" class="card-image" loading="lazy">
+                    <div class="card-body">
+                        <span class="card-tag">Home & Kitchen</span>
+                        <h3><a href="/robot-vacuums-pet-hair/">Best Robot Vacuums for Pet Hair</a></h3>
+                        <p>Pet hair doesn't stand a chance. We compared the top robot vacuums that actually pick up fur.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/robot-vacuums-pet-hair/" class="read-link">Read guide →</a>
+                    </div>
                 </div>
+
                 <div class="article-card">
-                    <span class="category-tag">Wellness</span>
-                    <h3><a href="/meditation-cushions/">Meditation Cushions for Beginners</a></h3>
-                    <p>Starting a meditation practice is hard enough without a sore back. We found cushions that actually support proper posture for longer sits.</p>
-                    <a href="/meditation-cushions/" class="read-more">Read the guide →</a>
+                    <img src="/img/standing-desk-hero.png" alt="Standing desks" class="card-image" loading="lazy">
+                    <div class="card-body">
+                        <span class="card-tag">Home & Kitchen</span>
+                        <h3><a href="/standing-desks-remote/">Standing Desks for Remote Workers</a></h3>
+                        <p>Your desk is the foundation of your home office. We tested for stability, motor quality, and adjustability.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/standing-desks-remote/" class="read-link">Read guide →</a>
+                    </div>
                 </div>
+
                 <div class="article-card">
-                    <span class="category-tag">Knitting & Crafts</span>
-                    <h3><a href="/knitting-yarn-beginners/">Best Knitting Yarn for Beginners</a></h3>
-                    <p>The yarns that won't split, pill, or make you want to quit. We tested beginner-friendly yarn, needles, and starter kits so your first project actually turns out.</p>
-                    <a href="/knitting-yarn-beginners/" class="read-more">Read the guide →</a>
+                    <img src="/img/best-mechanical-keyboards-hero.png" alt="Mechanical keyboards" class="card-image" loading="lazy">
+                    <div class="card-body">
+                        <span class="card-tag">Tech & Gadgets</span>
+                        <h3><a href="/best-mechanical-keyboards/">Best Mechanical Keyboards</a></h3>
+                        <p>Keyboards that feel right, sound good, and last — tested by someone who types for a living.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/best-mechanical-keyboards/" class="read-link">Read guide →</a>
+                    </div>
                 </div>
+
                 <div class="article-card">
-                    <span class="category-tag">Tech & Gadgets</span>
-                    <h3><a href="/best-mechanical-keyboards/">Best Mechanical Keyboards</a></h3>
-                    <p>Keyboards that feel right, sound good, and last — tested by someone who types for a living. Switches explained, no jargon required.</p>
-                    <a href="/best-mechanical-keyboards/" class="read-more">Read the guide →</a>
+                    <img src="/img/meditation-cushions-hero.png" alt="Meditation cushions" class="card-image" loading="lazy">
+                    <div class="card-body">
+                        <span class="card-tag">Wellness</span>
+                        <h3><a href="/meditation-cushions/">Meditation Cushions for Beginners</a></h3>
+                        <p>Starting a meditation practice is hard enough without a sore back. We found cushions that support proper posture.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/meditation-cushions/" class="read-link">Read guide →</a>
+                    </div>
                 </div>
+
                 <div class="article-card">
-                    <span class="category-tag">Sports Attire</span>
-                    <h3><a href="/running-shoes-beginners/">Best Running Shoes for Beginners</a></h3>
-                    <p>Running shoes that won't destroy your knees or your wallet. We tested the daily trainers that feel good from mile one.</p>
-                    <a href="/running-shoes-beginners/" class="read-more">Read the guide →</a>
+                    <img src="/img/knitting-yarn-hero.png" alt="Knitting yarn" class="card-image" loading="lazy">
+                    <div class="card-body">
+                        <span class="card-tag">Knitting & Crafts</span>
+                        <h3><a href="/knitting-yarn-beginners/">Best Knitting Yarn for Beginners</a></h3>
+                        <p>The yarns that won't split, pill, or make you want to quit. Plus starter kits and needle recommendations.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/knitting-yarn-beginners/" class="read-link">Read guide →</a>
+                    </div>
                 </div>
+
                 <div class="article-card">
-                    <span class="category-tag">Fashion & Accessories</span>
-                    <h3><a href="/best-affordable-watches/">Best Affordable Watches for Men</a></h3>
-                    <p>Watches that look twice their price — diver, dress, field, and everyday picks under $300, worn for months before recommending.</p>
-                    <a href="/best-affordable-watches/" class="read-more">Read the guide →</a>
+                    <img src="/img/running-shoes-hero.png" alt="Running shoes" class="card-image" loading="lazy">
+                    <div class="card-body">
+                        <span class="card-tag">Sports Attire</span>
+                        <h3><a href="/best-running-shoes-beginners/">Best Running Shoes for Beginners</a></h3>
+                        <p>Running shoes that won't destroy your knees or your wallet. Honest picks for people just starting out.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/best-running-shoes-beginners/" class="read-link">Read guide →</a>
+                    </div>
                 </div>
+
                 <div class="article-card">
-                    <span class="category-tag">Home & Kitchen</span>
-                    <h3><a href="/best-french-press/">Best French Press Coffee Makers</a></h3>
-                    <p>French press coffee makers that actually filter the grounds, hold heat, and don't shatter. Plus how to brew the perfect cup.</p>
-                    <a href="/best-french-press/" class="read-more">Read the guide →</a>
+                    <img src="/img/watches-hero.png" alt="Affordable watches" class="card-image" loading="lazy">
+                    <div class="card-body">
+                        <span class="card-tag">Fashion & Accessories</span>
+                        <h3><a href="/best-affordable-watches/">Best Affordable Watches for Men</a></h3>
+                        <p>Watches that look twice their price — diver, dress, field, and everyday picks under $300.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/best-affordable-watches/" class="read-link">Read guide →</a>
+                    </div>
                 </div>
+
                 <div class="article-card">
-                    <span class="category-tag">Home & Kitchen</span>
-                    <h3><a href="/best-air-purifiers/">Best Air Purifiers for Pet Owners</a></h3>
-                    <p>Air purifiers that handle pet dander, hair, and litter box smell — tested in real homes with real pets.</p>
-                    <a href="/best-air-purifiers/" class="read-more">Read the guide →</a>
+                    <img src="/img/best-french-press-hero.png" alt="French press" class="card-image" loading="lazy">
+                    <div class="card-body">
+                        <span class="card-tag">Home & Kitchen</span>
+                        <h3><a href="/best-french-press/">Best French Press Coffee Makers</a></h3>
+                        <p>French press makers that actually filter the grounds, hold heat, and don't shatter. Plus how to brew the perfect cup.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/best-french-press/" class="read-link">Read guide →</a>
+                    </div>
                 </div>
+
                 <div class="article-card">
-                    <span class="category-tag">Home & Kitchen</span>
-                    <h3><a href="/best-cast-iron-skillet/">Best Cast Iron Skillets</a></h3>
-                    <p>Cast iron skillets that don't stick, don't rust, and cook like they should. Plus how to season them right.</p>
-                    <a href="/best-cast-iron-skillet/" class="read-more">Read the guide →</a>
+                    <img src="/img/best-air-purifiers-hero.png" alt="Air purifiers" class="card-image" loading="lazy">
+                    <div class="card-body">
+                        <span class="card-tag">Home & Kitchen</span>
+                        <h3><a href="/best-air-purifiers/">Best Air Purifiers for Pet Owners</a></h3>
+                        <p>Air purifiers that handle pet dander, hair, and litter box smell — tested in real homes with real pets.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/best-air-purifiers/" class="read-link">Read guide →</a>
+                    </div>
                 </div>
+
                 <div class="article-card">
-                    <span class="category-tag">Video Game Deals</span>
-                    <h3><a href="/best-budget-gaming-headsets/">Best Budget Gaming Headsets Under $100</a></h3>
-                    <p>Gaming headsets under $100 that don't sound cheap. Tested for comfort, mic quality, and durability — with honest downsides for each pick.</p>
-                    <a href="/best-budget-gaming-headsets/" class="read-more">Read the guide →</a>
+                    <img src="/img/best-cast-iron-skillet-hero.png" alt="Cast iron skillets" class="card-image" loading="lazy">
+                    <div class="card-body">
+                        <span class="card-tag">Home & Kitchen</span>
+                        <h3><a href="/best-cast-iron-skillet/">Best Cast Iron Skillets</a></h3>
+                        <p>Cast iron skillets that don't stick, don't rust, and cook like they should. Plus how to season them right.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/best-cast-iron-skillet/" class="read-link">Read guide →</a>
+                    </div>
                 </div>
+
                 <div class="article-card">
-                    <span class="category-tag">Sports Attire</span>
-                    <h3><a href="/best-running-shoes-beginners/">Best Running Shoes for Beginners</a></h3>
-                    <p>Running shoes that won't destroy your knees or your wallet. Honest picks for people just starting out — no marathon-runner recommendations here.</p>
-                    <a href="/best-running-shoes-beginners/" class="read-more">Read the guide →</a>
-                </div>
-                <div class="article-card">
-                    <span class="category-tag">Fashion & Accessories</span>
-                    <h3><a href="/best-crossbody-bags-women/">Best Crossbody Bags for Women</a></h3>
-                    <p>Crossbody bags that hold your stuff without digging into your shoulder. Tested for everyday, travel, and nights out.</p>
-                    <a href="/best-crossbody-bags-women/" class="read-more">Read the guide →</a>
+                    <img src="/img/best-crossbody-bags-women-hero.png" alt="Crossbody bags" class="card-image" loading="lazy">
+                    <div class="card-body">
+                        <span class="card-tag">Fashion & Accessories</span>
+                        <h3><a href="/best-crossbody-bags-women/">Best Crossbody Bags for Women</a></h3>
+                        <p>Crossbody bags that hold your stuff without digging into your shoulder. Tested for everyday, travel, and nights out.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/best-crossbody-bags-women/" class="read-link">Read guide →</a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section>
-            <h2>Browse by Category</h2>
+        <!-- Browse by Category — compact, scannable -->
+        <section id="categories">
+            <div class="section-header">
+                <h2>Browse by Category</h2>
+            </div>
             <div class="category-grid">
                 <a href="/home-kitchen/" class="category-card">
-                    <h3>Home & Kitchen</h3>
-                    <p>Appliances, furniture, and home office gear — tested for real homes, not showrooms.</p>
-                    <span class="count">5 guides</span>
+                    <div class="category-icon">🍳</div>
+                    <div>
+                        <h3>Home & Kitchen</h3>
+                        <span class="count">5 guides</span>
+                    </div>
                 </a>
                 <a href="/tech-gadgets/" class="category-card">
-                    <h3>Tech & Gadgets</h3>
-                    <p>Keyboards, smart home, and electronics — honest reviews without the hype.</p>
-                    <span class="count">2 guides</span>
+                    <div class="category-icon">⌨️</div>
+                    <div>
+                        <h3>Tech & Gadgets</h3>
+                        <span class="count">2 guides</span>
+                    </div>
                 </a>
                 <a href="/wellness/" class="category-card">
-                    <h3>Wellness</h3>
-                    <p>Fitness, meditation, and self-care — gear that supports your practice, not your wallet's regret.</p>
-                    <span class="count">1 guide</span>
+                    <div class="category-icon">🧘</div>
+                    <div>
+                        <h3>Wellness</h3>
+                        <span class="count">1 guide</span>
+                    </div>
                 </a>
                 <a href="/knitting-yarn-beginners/" class="category-card">
-                    <h3>Knitting & Crafts</h3>
-                    <p>Yarn, needles, and crafting supplies — because your first project shouldn't make you cry.</p>
-                    <span class="count">1 guide</span>
+                    <div class="category-icon">🧶</div>
+                    <div>
+                        <h3>Knitting & Crafts</h3>
+                        <span class="count">1 guide</span>
+                    </div>
                 </a>
-                <a href="/best-running-shoes-beginners/" class="category-card">
-                    <h3>Sports Attire</h3>
-                    <p>Running shoes, athletic wear, and workout gear — tested by people who actually sweat.</p>
-                    <span class="count">2 guides</span>
+                <a href="/sports-attire/" class="category-card">
+                    <div class="category-icon">👟</div>
+                    <div>
+                        <h3>Sports Attire</h3>
+                        <span class="count">2 guides</span>
+                    </div>
                 </a>
-                <a href="/best-budget-gaming-headsets/" class="category-card">
-                    <h3>Video Game Deals</h3>
-                    <p>Game headsets, hardware, and accessory deals — honest reviews for budget gamers.</p>
-                    <span class="count">1 guide</span>
+                <a href="/video-game-deals/" class="category-card">
+                    <div class="category-icon">🎮</div>
+                    <div>
+                        <h3>Video Game Deals</h3>
+                        <span class="count">1 guide</span>
+                    </div>
                 </a>
-                <a href="/best-crossbody-bags-women/" class="category-card">
-                    <h3>Fashion & Accessories</h3>
-                    <p>Watches, bags, and the details that pull a look together — style without the markup.</p>
-                    <span class="count">2 guides</span>
+                <a href="/fashion-accessories/" class="category-card">
+                    <div class="category-icon">👜</div>
+                    <div>
+                        <h3>Fashion & Accessories</h3>
+                        <span class="count">2 guides</span>
+                    </div>
+                </a>
+                <a href="/loom/" class="category-card dead-directory-link">
+                    <div class="category-icon">📡</div>
+                    <div>
+                        <h3>Signal Analysis</h3>
+                        <span class="count">1 index</span>
+                    </div>
                 </a>
             </div>
         </section>
+
+        <!-- How We Test — Trust architecture -->
+        <section id="how-we-test" class="methodology">
+            <h2>How We Pick</h2>
+            <div class="method-steps">
+                <div class="method-step">
+                    <div class="step-num">01</div>
+                    <h3>Research</h3>
+                    <p>We survey thousands of owner reviews, professional tests, and forum threads to find what actually holds up.</p>
+                </div>
+                <div class="method-step">
+                    <div class="step-num">02</div>
+                    <h3>Compare</h3>
+                    <p>We build side-by-side comparison tables so you can see real differences — not just marketing bullet points.</p>
+                </div>
+                <div class="method-step">
+                    <div class="step-num">03</div>
+                    <h3>Pick</h3>
+                    <p>We name a clear best choice for each need, and we always tell you the downsides — no product is perfect.</p>
+                </div>
+                <div class="method-step">
+                    <div class="step-num">04</div>
+                    <h3>Update</h3>
+                    <p>Guides get revisited when new products launch or prices change. We don't leave you with stale picks.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Bar -->
+        <div class="cta-bar">
+            <h2>New guides every week</h2>
+            <p>We publish fresh buying guides regularly. Bookmark this page and check back.</p>
+            <a href="#latest-guides" class="btn-primary">See All Guides →</a>
+        </div>
     </main>
 
-    <footer>
+    <footer class="site-footer">
         <div class="footer-inner">
-            <div class="footer-col">
-                <h4>The Yarn</h4>
-                <p>Honest product recommendations, thoroughly researched. We earn commissions from qualifying purchases.</p>
+            <div class="footer-brand">
+                <a href="/" class="logo">The Yarn</a>
+                <p>Honest product recommendations, thoroughly researched. We earn commissions from qualifying purchases — it doesn't affect our picks.</p>
             </div>
             <div class="footer-col">
                 <h4>Categories</h4>
                 <ul>
                     <li><a href="/home-kitchen/">Home & Kitchen</a></li>
-                    <li><a href="/best-mechanical-keyboards/">Tech & Gadgets</a></li>
+                    <li><a href="/tech-gadgets/">Tech & Gadgets</a></li>
                     <li><a href="/wellness/">Wellness</a></li>
                     <li><a href="/knitting-yarn-beginners/">Knitting & Crafts</a></li>
-                    <li><a href="/running-shoes-beginners/">Sports Attire</a></li>
+                    <li><a href="/sports-attire/">Sports Attire</a></li>
                     <li><a href="/video-game-deals/">Video Game Deals</a></li>
-                    <li><a href="/best-affordable-watches/">Fashion & Accessories</a></li>
+                    <li><a href="/fashion-accessories/">Fashion & Accessories</a></li>
                 </ul>
             </div>
             <div class="footer-col">
-                <h4>Legal</h4>
+                <h4>Popular Guides</h4>
                 <ul>
+                    <li><a href="/best-budget-gaming-headsets/">Budget Gaming Headsets</a></li>
+                    <li><a href="/best-mechanical-keyboards/">Mechanical Keyboards</a></li>
+                    <li><a href="/robot-vacuums-pet-hair/">Robot Vacuums for Pet Hair</a></li>
+                    <li><a href="/best-running-shoes-beginners/">Running Shoes</a></li>
+                    <li><a href="/best-affordable-watches/">Affordable Watches</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="/about/">About The Yarn</a></li>
                     <li><a href="/privacy/">Privacy Policy</a></li>
                     <li><a href="/disclosure/">Affiliate Disclosure</a></li>
                 </ul>
             </div>
         </div>
-        <p class="copyright">&copy; 2026 The Yarn. As an Amazon Associate, I earn from qualifying purchases.</p>
+        <div class="footer-bottom">
+            <span>&copy; 2026 The Yarn. All rights reserved.</span>
+            <span>As an Amazon Associate, I earn from qualifying purchases.</span>
+        </div>
     </footer>
+
+    <!-- The Loom ARG — Hidden Layer -->
+    <div class="origin-point" style="position:fixed;top:42%;left:58%;width:2px;height:2px;"></div>
+    <a href="/loom/" class="dead-directory-link" style="display:inline-block;width:1px;height:1px;overflow:hidden;position:absolute;left:-9999px;" aria-hidden="true">looom</a>
+
+    <script src="/loom/js/loom.js"></script>
 </body>
 </html>

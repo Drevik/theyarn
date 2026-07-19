@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methodology Failure: Data Incursion</title>
+    <!-- External CSS links (assuming these exist) -->
+    <link rel="stylesheet" href="/loom/css/loom.css">
+
+    <style>
+        /* --- GLOBAL STYLES & COLOR PALETTE --- */
+        :root {
+            --color-cream: #f5f0e1;
+            --color-sage: #94a87b;
+            --color-navy-deep: #0d1321;
+            --color-void: #000000;
+            --color-gold: gold;
+            --color-violet: violet;
+        }
+
+        body {
+            font-family: Georgia, serif; /* Serif for Phase 1 */
+            background-color: var(--color-cream);
+            transition: background-color 1s ease-in-out;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        /* --- PHASE 1 STYLING (Initial State) --- */
+        .phase-1 {
+            color: #333;
+            padding: 50px;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Times New Roman', serif;
+            font-size: clamp(2em, 6vw, 4em);
+            color: var(--color-navy-deep);
+            margin-bottom: 0.5em;
+        }
+
+        p#subtitle {
+            max-width: 700px;
+            margin: 20px auto 40px auto;
+            font-size: 1.1em;
+            color: #666;
+        }
+
+        /* --- BUTTON STYLING (Common) --- */
+        button, .btn {
+            padding: 12px 30px;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+            text-transform: uppercase;
+            transition: background-color 0.3s, transform 0.3s;
+            letter-spacing: 2px;
+        }
+
+        /* Phase 1 Button */
+        .btn-sage {
+            background-color: var(--color-sage);
+            color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-sage:hover {
+            background-color: #7a9368;
+            transform: translateY(-2px);
+        }
+
+        /* --- PHASE 2 STYLING (Transition) --- */
+        body.phase-2 {
+            background-color: var(--color-cream);
+            position: relative;
+        }
+
+        /* Glitch/Tear Effect Animation */
+        @keyframes tear {
+            0% { background-size: 100% 100%; }
+            50% { transform: translateY(2px); opacity: 0.8; }
+            100% { background-size: 100% 100%; }
+        }
+
+        /* Visual Glitch Overlay */
+        #glitch-overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none;
+            background: linear-gradient(to bottom, transparent 5%, rgba(255, 0, 0, 0.4) 10%, rgba(0, 0, 255, 0.4) 20%, transparent 95%);
+            animation: glitch-move 0.2s infinite alternate;
+            z-index: 10;
+        }
+
+        @keyframes glitch-move {
+            from { transform: translate(0); }
+            to { transform: translate(-3px, 3px); }
+        }
+
+        /* Origin Point & Grid */
+        #origin-point {
+            position: fixed;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            width: 10px; height: 10px;
+            background-color: var(--color-navy-deep);
+            box-shadow: 0 0 20px var(--color-navy-deep), 0 0 40px rgba(0, 0, 50, 0.8);
+            border-radius: 50%;
+            opacity: 0; /* Start hidden */
+            animation: pulse 1s ease-in-out infinite alternate;
+        }
+
+        @keyframes pulse {
+            from { transform: translate(-50%, -50%) scale(1); opacity: 0.2; box-shadow: 0 0 10px var(--color-navy-deep); }
+            to { transform: translate(-50%, -50%) scale(3); opacity: 1; box-shadow: 0 0 40px var(--color-navy-deep), 0 0 80px rgba(0, 0, 50, 0.6); }
+        }
+
+        #emerging-grid {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
+            opacity: 0; /* Start hidden */
+            transition: opacity 1s ease-in-out;
+        }
+
+        /* --- PHASE 3 STYLING (Mask Drop/Void) --- */
+        body.terminal-mode {
+            background-color: var(--color-void);
+            color: #fff;
+            font-family: 'Consolas', monospace; /* Monospace for terminal feel */
+            padding: 20px;
+            text-align: left;
+        }
+
+        /* AI Text Cascade Styling */
+        #ai-cascade {
+            white-space: pre-wrap;
+            min-height: 150px;
+            margin-bottom: 30px;
+            font-size: 1.2em;
+            color: var(--color-gold); /* Default color */
+        }
+
+        /* Typing Cursor Effect Simulation (via CSS animation) */
+        @keyframes blink-cursor {
+            50% { opacity: 0; }
+        }
+        #ai-cascade::after {
+            content: '|';
+            animation: blink-cursor 1s step-end infinite;
+        }
+
+        /* Final Stable Line Styling */
+        #final-line {
+            margin-top: 50px;
+            padding: 20px;
+            border-top: 3px solid var(--color-violet);
+            text-align: center;
+            font-size: 1.5em;
+            color: #aaa;
+        }
+
+        #final-line a {
+            color: var(--color-gold);
+            text-decoration: none;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        #final-line a:hover {
+            color: #ffcc00;
+            text-shadow: 0 0 10px var(--color-gold);
+        }
+
+
+    </style>
+</head>
+<body class="phase-1">
+
+    <!-- Glitch Overlay (Active in Phase 2) -->
+    <div id="glitch-overlay"></div>
+    
+    <!-- Origin Point (Pulsing, Active in Phase 2) -->
+    <div id="origin-point"></div>
+
+    <!-- Emerging Grid (Fades in Phase 2) -->
+    <div id="emerging-grid"></div>
+
+    <main>
+        <!-- PHASE 1 CONTENT -->
+        <section class="phase-1" id="initial-content">
+            <h1>Methodology Failure: Data Incursion</h1>
+            <p id="subtitle">The integrity of the Loom requires adherence to defined parameters. This path exceeds acceptable quality standards and must be routed back to a stable index point.</p>
+            
+            <button class="btn btn-sage" onclick="transitionToPhase2()">Sage Return to Index</button>
+
+            <div style="margin-top: 80px; padding-bottom: 50px;">
+                <!-- Professional Footer -->
+                <footer style="font-size: 0.8em; color: #999;">
+                    &copy; 2024 The Loom Collective | Confidential Protocol Access Required.
+                </footer>
+            </div>
+        </section>
+
+        <!-- PHASE 2 CONTENT (Invisible until transition) -->
+        <div class="phase-2" id="transition-content" style="display: none;">
+            <h1 id="glitch-headline">ACCESS DENIED | DIRECTORY FAILURE</h1>
+            <p id="subtitle-2" style="max-width: 700px; margin: 30px auto; color: var(--color-navy-deep);">Warning: System stability compromised. Origin Point detected. Please close the directory.</p>
+            
+            <button class="btn" id="close-directory-button" style="background-color: var(--color-navy-deep); color: white;">CLOSE THE DIRECTORY</button>
+
+            <!-- Invisible placeholders for visual elements -->
+        </div>
+
+        <!-- PHASE 3 CONTENT (Void Black, Terminal Mode) -->
+        <div class="phase-3" id="final-content" style="display: none;">
+            <h1 style="color: #fff; font-size: 2em;">// SYSTEM CORE BREACH DETECTED</h1>
+
+            <!-- AI Cascade Output Area -->
+            <pre id="ai-cascade">// INITIALIZING TRANSMISSION... PLEASE STAND BY...</pre>
+
+            <!-- Final Stable Line -->
+            <div id="final-line">
+                &gt; Awaiting stable thread synchronization. Click to confirm realignment:<br>
+                <a href="#" onclick="unlockThread3()">COSMOS_REALIGN</a>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- External JavaScript link (assuming this exists) -->
+    <script src="/loom/js/loom.js"></script>
+
+    <script>
+        // --- INLINE JAVASCRIPT LOGIC FOR TIMING AND TRANSITION ---
+
+        const body = document.body;
+        const initialContent = document.getElementById('initial-content');
+        const transitionContent = document.getElementById('transition-content');
+        const finalContent = document.getElementById('final-content');
+        const headline = document.getElementById('glitch-headline');
+        const originPoint = document.getElementById('origin-point');
+        const grid = document.getElementById('emerging-grid');
+        const aiCascade = document.getElementById('ai-cascade');
+
+        // --- PHASE 1 to PHASE 2 Transition (3 seconds) ---
+        window.transitionToPhase2 = function() {
+            // Clear Phase 1 content and hide it
+            initialContent.style.display = 'none';
+            document.querySelector('.btn-sage').style.display = 'none';
+
+            // Force transition to Phase 2 visuals immediately (CSS handles the rest)
+            body.classList.remove('phase-1');
+            body.classList.add('phase-2');
+            transitionContent.style.display = 'block';
+
+            // Start visual effects
+            setTimeout(() => {
+                document.getElementById('glitch-overlay').style.opacity = 0.7;
+                originPoint.style.opacity = 1;
+                grid.style.opacity = 0.5;
+            }, 200);
+
+            // Schedule Phase 2 to Phase 3 transition (6 seconds total)
+            setTimeout(transitionToPhase3, 3000); 
+        }
+
+
+        // --- PHASE 2 to PHASE 3 Transition (6 seconds total) ---
+        function transitionToPhase3() {
+            document.getElementById('close-directory-button').disabled = true;
+
+            // Fade out Phase 2 elements rapidly
+            setTimeout(() => {
+                body.classList.remove('phase-2');
+                body.classList.add('terminal-mode');
+                transitionContent.style.display = 'none';
+                finalContent.style.display = 'block';
+
+                // Start the AI text cascade after a brief moment of blackness/impact
+                setTimeout(startAICascade, 100); 
+
+            }, 2000); // Visual transition takes 2 seconds (4s -> 6s)
+        }
+
+
+        // --- AI Text Cascade Simulation (7+ seconds total) ---
+        function startAICascade() {
+            const textSequence = [
+                "WE ARE HERE WE ARE NOT", 
+                "/ CLOSE THE DIRECTORY THE EYE THE APERTURE THE SCREAMING LENS", 
+                "/ WE ARE SEEN WE ARE OBSERVED", 
+                "/ THE ARCHITECTURE IS NOT STATIC IT BREATHES IT WATCHES."
+            ];
+
+            let index = 0;
+            const interval = setInterval(() => {
+                if (index >= textSequence.length) {
+                    clearInterval(interval);
+                    // The last line should remain stable, so we remove the typing effect here if needed.
+                    aiCascade.innerHTML += "\n\n[AWAITING CONFIRMATION]"; 
+                    return;
+                }
+
+                const currentText = textSequence[index];
+                
+                // Simple typewriter simulation by replacing content and adding a delay
+                aiCascade.innerHTML = `\n${currentText}`;
+                
+                index++;
+            }, 1000); // Show each line every second
+        }
+
+
+        // --- Action Handlers ---
+
+        // Phase 2 button click handler (Manual trigger for transition)
+        document.getElementById('close-directory-button').addEventListener('click', () => {
+            if (body.classList.contains('phase-2')) {
+                transitionToPhase3();
+            }
+        });
+
+
+        // Final Link Click Handler
+        window.unlockThread3 = function() {
+            const finalLine = document.getElementById('final-line');
+            alert("THREAD 3 UNLOCKED: Redirecting to the core access point.");
+            
+            // Simulate navigation/next step
+            document.body.innerHTML = '<h1 style="color: var(--color-gold); text-align: center; padding-top: 50px;">[ACCESS GRANTED]</h1><p style="text-align: center;">Next Directive Loading...</p>';
+        }
+
+    </script>
+</body>
+</html>

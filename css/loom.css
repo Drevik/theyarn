@@ -1,0 +1,345 @@
+:root {
+    /* Yarn Design System Variables */
+    --ink: #1a1a1a;
+    --ink-light: #4a4a4a;
+    --ink-muted: #7a7a7a;
+    --cream: #faf8f2;
+    --cream-dark: #f0ece0;
+    --white: #ffffff;
+    --sage: #2d6a4f;
+    --sage-dark: #1b4332;
+    --sage-light: #52b788;
+    --sage-pale: #d8f3dc;
+    --gold: #c8952e;
+    --gold-light: #faedcd;
+    --gold-pale: #fdf6e3;
+    --border: #e0dcd0;
+
+    /* ARG Phase/Occult Layer Variables */
+    --void-black: #0A0A0F;
+    --deep-navy: #0F1420;
+    --origin-gold: #D4A853;
+    --thread-amber: #F5A623;
+    --mystic-indigo: #2E0F5E;
+    --hidden-violet: #4A1C6E;
+
+    /* General Overrides for ARG */
+    transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease, opacity 0.5s ease;
+}
+
+/* ================================================== */
+/* Global Phase & Background Mechanics (Vignette/Body) */
+/* ================================================== */
+
+body {
+    background-color: var(--cream);
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Body Transitions and Overrides */
+
+/* Phase 2 */
+body.phase-2::before {
+    content: '';
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    pointer-events: none;
+    background: radial-gradient(circle at center, transparent 5%, rgba(15, 20, 32, 0.1) 40%, rgba(15, 20, 32, 0.6) 100%);
+    opacity: 0; /* Starts hidden */
+    transition: opacity 0.5s ease;
+}
+body.phase-2::before {
+    opacity: 1;
+}
+
+/* Phase 3 */
+body.phase-3::before {
+    background: radial-gradient(circle at center, transparent 5%, rgba(15, 20, 32, 0.0) 40%, rgba(15, 20, 32, 0.7) 100%);
+}
+
+/* Phase 4 */
+body.phase-4::before {
+    background: radial-gradient(circle at center, transparent 5%, rgba(15, 20, 32, 0.0) 40%, rgba(15, 20, 32, 0.9) 100%);
+}
+
+/* Phase 5 */
+body.phase-5 {
+    background: var(--void-black);
+    color: var(--origin-gold);
+    font-family: monospace;
+}
+
+/* Site Header Overrides (General phase shifts) */
+.site-header {
+    transition: background-color 0.5s ease;
+}
+body.phase-3 .site-header {
+    background-color: var(--deep-navy);
+    border-bottom: 2px solid var(--origin-gold);
+}
+
+/* Buttons/Interactive elements (General phase shifts) */
+button, a {
+    transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
+}
+body.phase-3 button, body.phase-3 .btn {
+    background-color: var(--sage); /* Default */
+    border-color: var(--sage);
+}
+body.phase-3 button:hover, body.phase-3 .btn:hover {
+    background-color: var(--origin-gold);
+    border-color: var(--origin-gold);
+}
+
+/* ================================================== */
+/* 1. Origin Point Dot */
+/* ================================================== */
+
+.origin-point {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2px;
+    height: 2px;
+    background-color: var(--sage); /* Initial neutral color */
+    border-radius: 50%;
+    opacity: 0.1; /* Start invisible/neutral */
+    pointer-events: none;
+    z-index: 9999;
+    transition: opacity 0.8s ease, box-shadow 0.8s ease;
+}
+
+/* Phase Overrides */
+body.phase-1 .origin-point { opacity: 0.03; }
+body.phase-2 .origin-point { opacity: 0.15; }
+body.phase-3 .origin-point { opacity: 0.4; box-shadow: 0 0 5px var(--origin-gold); }
+body.phase-4 .origin-point { opacity: 0.8; animation: origin-pulse 2s infinite linear; }
+body.phase-5 .origin-point { opacity: 1; background-color: var(--origin-gold); box-shadow: 0 0 15px var(--origin-gold); }
+
+/* ================================================== */
+/* 2. Thread Pull Text Effect */
+/* ================================================== */
+
+.thread-pull {
+    cursor: pointer;
+    display: inline-block;
+    padding: 2px 4px;
+    color: var(--ink);
+    background-color: var(--cream);
+    transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+/* Hover State (Always visible) */
+.thread-pull:hover {
+    text-decoration: none !important;
+    box-shadow: none; /* Remove default underline if any */
+}
+
+/* Unraveling Class (JS added) - Active state */
+.unraveling {
+    color: var(--origin-gold);
+    background-color: var(--void-black);
+    border-bottom: 2px solid var(--thread-amber);
+    transition: all 1s ease;
+}
+
+/* ================================================== */
+/* 3. Hidden Void Text */
+/* ================================================== */
+
+.hidden-void-text {
+    background-color: var(--cream) !important; /* Matches background, invisible */
+    color: var(--cream); /* Invisible text color */
+    cursor: help;
+    display: inline-block;
+    user-select: none;
+}
+
+/* Selection State (Browser native ::selection pseudo-element) */
+.hidden-void-text::selection {
+    background-color: var(--sage-pale);
+    color: var(--mystic-indigo);
+}
+
+/* Revealed Class (JS added - Visible state) */
+.revealed {
+    color: var(--origin-gold);
+    cursor: default;
+    opacity: 1 !important;
+    background-color: transparent !important;
+    pointer-events: auto; /* Make it clickable/selectable again */
+}
+
+/* ================================================== */
+/* 4. Orphaned Index Card Styling */
+/* ================================================== */
+
+.orphaned-index {
+    border: 1px solid var(--border);
+    padding: 20px;
+    background-color: var(--cream-dark);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.orphaned-index .term {
+    display: block;
+    margin-top: 1em;
+    font-weight: bold;
+    color: var(--sage-dark);
+}
+
+/* Acrostic Highlight (Origin Gold Underline + Glow) */
+.acrostic-highlight {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    padding-bottom: 2px; /* Space for the underline effect */
+    color: var(--ink);
+}
+
+/* The actual glowing underline effect */
+.acrostic-highlight::after {
+    content: '';
+    position: absolute;
+    left: -50%;
+    right: -50%;
+    bottom: 0;
+    height: 3px;
+    background: linear-gradient(to right, transparent, var(--origin-gold), transparent);
+    box-shadow: 0 0 8px rgba(212, 168, 83, 0.5); /* Subtle glow */
+}
+
+/* ================================================== */
+/* 5. Dead Directory Link Styling */
+/* ================================================== */
+
+.dead-directory-link {
+    color: var(--ink-muted);
+    text-decoration: none;
+    transition: color 0.5s ease, opacity 0.5s ease;
+}
+
+body.phase-3 .dead-directory-link {
+    color: var(--origin-gold);
+    opacity: 0.8;
+}
+
+/* ================================================== */
+/* 6. Emerging Grid Overlay */
+/* ================================================== */
+
+.emerging-grid {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    pointer-events: none; /* Crucial: allows interaction underneath */
+    z-index: 1000;
+    background-image: repeating-linear-gradient(
+        #ffffff 50% 0,
+        transparent 50% 0
+    ),
+    repeating-linear-gradient(
+        90deg,
+        var(--origin-gold) 1px,
+        transparent 1px
+    );
+    opacity: 0; /* Starts completely invisible */
+    transition: opacity 0.5s ease;
+}
+
+/* Phase Overrides */
+body.phase-2 .emerging-grid { opacity: 0.05; }
+body.phase-3 .emerging-grid { opacity: 0.15; background-image: repeating-linear-gradient(var(--origin-gold) 1px, transparent 1px), repeating-linear-gradient(transparent 50% 0, var(--origin-gold) 50% 0); }
+body.phase-4 .emerging-grid { opacity: 0.4; background-image: repeating-linear-gradient(rgba(212, 168, 83, 0.4) 1px, transparent 1px), repeating-linear-gradient(transparent 50% 0, rgba(212, 168, 83, 0.4) 50% 0); }
+body.phase-5 .emerging-grid { opacity: 0.8; background-image: repeating-linear-gradient(var(--origin-gold) 1px, var(--origin-gold) 1px), repeating-linear-gradient(var(--origin-gold) 1px, var(--origin-gold) 1px); }
+
+/* ================================================== */
+/* 7. Terminal Overlay */
+/* ================================================== */
+
+.terminal-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: var(--void-black);
+    color: var(--origin-gold);
+    font-family: monospace;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 10000;
+    opacity: 0; /* Starts hidden */
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* Active Class (JS added) - Visible state */
+.terminal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ================================================== */
+/* 8. Password Modal Styling */
+/* ================================================== */
+
+.password-modal {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: var(--deep-navy);
+    z-index: 11000; /* Above terminal overlay */
+    opacity: 0; /* Starts hidden */
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* Active Class (JS added) - Visible state */
+.password-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.password-modal .modal-content {
+    background-color: var(--void-black);
+    border: 3px solid var(--origin-gold);
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(212, 168, 83, 0.5);
+}
+
+.password-modal input[type="text"], .password-modal input[type="password"] {
+    background-color: var(--void-black);
+    border: 1px solid var(--origin-gold);
+    color: var(--origin-gold);
+    font-family: monospace;
+}
+
+/* ================================================== */
+/* KEYFRAMES DEFINITIONS */
+/* ================================================== */
+
+@keyframes origin-pulse {
+    0%, 100% { transform: translate(-50%, -50%); opacity: 0.8; box-shadow: 0 0 10px var(--origin-gold); }
+    50% { transform: translate(-50%, -50%) scale(2); opacity: 1; box-shadow: 0 0 20px var(--origin-gold); }
+}
+
+@keyframes text-glitch {
+    /* Simple jitter effect for headings */
+    0%, 100% { transform: translate(0, 0); opacity: 1; }
+    25% { transform: translate(-1px, 1px); opacity: 0.9; }
+    75% { transform: translate(1px, -1px); opacity: 0.8; }
+}
+
+@keyframes screen-tear {
+    /* Horizontal displacement flicker */
+    0%, 100% { clip-path: inset(0 0 0 0); }
+    50% { clip-path: inset(0 2px 0 0); opacity: 0.8; transform: translateX(-1px); }
+}
+
+/* Apply glitch/tear effects to specific elements when phasing */
+body.phase-4 h1, body.phase-4 h2, body.phase-4 p {
+    animation: text-glitch 3s infinite alternate linear;
+    display: inline-block; /* Required for clip-path usage on block elements */
+}
+
+body.phase-5 .terminal-overlay * {
+    animation: screen-tear 0.1s steps(1) infinite;
+}

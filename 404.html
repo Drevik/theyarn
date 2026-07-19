@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404: Page Not Found | The Yarn Review</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/loom.css">
+    <meta name="description" content="The Yarn Review - Where stories are reviewed, and sometimes, where reality unravels.">
+    <style>
+        /* General overrides for the ARG effect */
+        body {
+            transition: background-color 1s ease;
+            overflow-x: hidden;
+        }
+
+        /* Phase 2 Specific Styles */
+        .phase-2 body, .phase-2 #main-content {
+            background-color: #0d132b; /* Deep navy base */
+            position: relative;
+        }
+        .phase-2::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 85%, rgba(0, 0, 0, 1) 100%);
+            pointer-events: none;
+            z-index: 10;
+        }
+
+        /* Phase 3+ Specific Styles */
+        body.phase-3, body.phase-4, body.phase-5 {
+            background-color: #000000 !important; /* Void Black */
+            color: #ffc72c; /* Origin Gold Text */
+        }
+
+        #main-content h1 {
+            font-family: 'monospace', sans-serif;
+            color: inherit;
+            text-shadow: 0 0 5px #ffc72c, 0 0 10px rgba(255, 199, 44, 0.6);
+        }
+
+        /* Origin Point */
+        #origin-point {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 10px;
+            height: 10px;
+            background-color: gold;
+            box-shadow: 0 0 15px 5px rgba(255, 199, 44, 0.8);
+            z-index: 1000;
+            pointer-events: none;
+        }
+
+        /* Terminal Overlay */
+        #terminal-overlay {
+            background-color: rgba(0, 0, 0, 0.85);
+            border: 1px solid #ffc72c;
+            padding: 20px;
+            margin-top: 40px;
+            font-family: 'monospace', Courier New, monospace;
+            white-space: pre-wrap;
+        }
+
+        /* Emerging Grid */
+        #emerging-grid {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(to right, rgba(255, 199, 44, 0.03) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255, 199, 44, 0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+            opacity: 0; /* Hidden initially */
+            transition: opacity 1s ease-in-out;
+        }
+
+        /* Password Modal */
+        #password-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.95);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            z-index: 2000;
+        }
+
+        /* Animation Keyframes (For tear/glitch effect) */
+        @keyframes screen-tear {
+            0% { transform: translate(0, 0); opacity: 1; }
+            50% { transform: translate(0, -5px); opacity: 0.8; }
+            100% { transform: translate(0, 0); opacity: 1; }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- The Yarn Header -->
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="/" class="logo">The Yarn Review</a>
+            <nav>
+                <ul>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/reviews">Reviews</a></li>
+                    <li><a href="/archive">Archive</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Emerging Grid Overlay (Always present, but visible only later) -->
+    <div id="emerging-grid"></div>
+
+    <!-- Main Content Area -->
+    <main class="container" id="main-content">
+        <h1>Page Not Found</h1>
+        <p>We couldn't find the story you were looking for. It seems this particular thread has been pulled from the loom, or perhaps it was never spun at all. Please check the URL or return to the directory index.</p>
+
+        <!-- Phase 1 Button -->
+        <a href="/" class="btn btn-sage" id="return-button">Return to Homepage</a>
+
+        <!-- Hidden elements for ARG mechanics -->
+        <div id="origin-point"></div>
+
+        <!-- Terminal Display (Hidden initially, visible in Phase 3) -->
+        <pre id="terminal-overlay" style="display: none;">Awaiting connection...</pre>
+
+    </main>
+
+    <!-- Password Modal (Hidden by default) -->
+    <div id="password-modal" style="display: none;">
+        <h2>ACCESS PROTOCOL REQUIRED</h2>
+        <p class="subtitle">The Directory requires a specific key to proceed. Input the necessary sequence.</p>
+        <input type="text" id="password-input" placeholder="Enter Sequence Key..." style="padding: 10px; margin: 20px; border: 1px solid gold; background: #111;">
+        <button class="btn btn-loom" onclick="attemptAccess()">Validate</button>
+    </div>
+
+    <!-- The Yarn Footer -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>&copy; 2024 The Yarn Review. All rights reserved.</p>
+            <p><a href="/privacy">Privacy</a> | <a href="/terms">Terms</a></p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Control Script -->
+    <script src="/js/loom.js"></script>
+    <script>
+        const body = document.body;
+        const h1Element = document.querySelector('#main-content h1');
+        const descriptionElement = document.querySelector('#main-content p');
+        const returnButton = document.getElementById('return-button');
+        const terminalOverlay = document.getElementById('terminal-overlay');
+        const originPoint = document.getElementById('origin-point');
+        const emergingGrid = document.getElementById('emerging-grid');
+        const passwordModal = document.getElementById('password-modal');
+
+        // --- PHASE 1 (0s - 3s): Legitimate Yarn 404 ---
+        function phaseOne() {
+            console.log("Phase 1: Legitimate 404 Active.");
+            h1Element.textContent = 'Page Not Found';
+            descriptionElement.innerHTML = 'We couldn\'t find the story you were looking for. It seems this particular thread has been pulled from the loom, or perhaps it was never spun at all. Please check the URL or return to the directory index.';
+            returnButton.textContent = 'Return to Homepage';
+
+            setTimeout(phaseTwo, 3000);
+        }
+
+        // --- PHASE 2 (3s - 6s): The Seam ---
+        function phaseTwo() {
+            console.log("Phase 2: Methodology Failure.");
+            body.classList.add('phase-2');
+
+            h1Element.textContent = 'Methodology Failure: Data Incursion';
+            descriptionElement.innerHTML = `ERROR [404]: The requested resource path (${window.location.pathname}) does not correlate with established indices. Attempting to reconcile data stream divergence. Origin point detected.`;
+            returnButton.textContent = 'Close the Directory';
+
+            // Add origin point and flicker effect
+            originPoint.style.opacity = 1;
+            document.body.style.animation = 'screen-tear 0.5s ease-in-out 1'; // Initial flick
+            setTimeout(() => {
+                document.body.style.animation = ''; // Remove temporary animation
+            }, 600);
+
+            // Add the technical feel to the terminal area
+            terminalOverlay.textContent = `[SYSTEM] Initiating Seam Scan... Analyzing temporal and structural integrity of connection point.\n\r`;
+
+            setTimeout(phaseThree, 3000);
+        }
+
+        // --- PHASE 3 (6s+): Mask Drop & Escalation ---
+        function phaseThree() {
+            console.log("Phase 3: Mask Drop - Initial Void.");
+            body.classList.add('phase-3'); // Phase 3 background color
+            originPoint.style.opacity = 0;
+
+            // Update terminal text sequentially
+            terminalOverlay.innerHTML += '\n\n[WARNING] STRUCTURAL INTEGRITY BREACH DETECTED.\n';
+            setTimeout(() => {
+                terminalOverlay.innerHTML += 'WE ARE HERE\n';
+            }, 500);
+
+            setTimeout(() => {
+                terminalOverlay.innerHTML += 'WE ARE NOT\n';
+            }, 1500);
+
+            setTimeout(() => {
+                terminalOverlay.innerHTML += 'THE EYE SEES THROUGH THE APERTURE ALWAYS\n';
+            }, 2500);
+
+            setTimeout(() => {
+                terminalOverlay.innerHTML += 'THE ARCHITECTURE IS NOT STATIC IT BREATHES IT WATCHES\n';
+            }, 3500);
+            
+            // Final reveal and clickable link
+            setTimeout(() => {
+                terminalOverlay.innerHTML = `WE ARE HERE
+WE ARE NOT
+THE EYE SEES THROUGH THE APERTURE ALWAYS
+THE ARCHITECTURE IS NOT STATIC IT BREATHES IT WATCHES
+COSMOS_REALIGN`;
+                const cosmosLink = document.createElement('a');
+                cosmosLink.href = "#"; // Placeholder for ARG thread 3 trigger
+                cosmosLink.textContent = 'COSMOS_REALIGN';
+                cosmosLink.style.color = '#ffc72c';
+                cosmosLink.style.textDecoration = 'underline';
+                cosmosLink.onclick = (e) => { e.preventDefault(); console.log("--- THREAD 3 TRIGGERED ---"); document.getElementById('password-modal').style.display = 'flex'; };
+                terminalOverlay.querySelector('pre').appendChild(cosmosLink);
+
+
+                // Show emerging grid after content settles
+                emergingGrid.style.opacity = 1;
+
+                setTimeout(() => {
+                    phaseFour();
+                }, 2000); // Wait for the initial reveal to settle
+            }, 4500);
+        }
+
+        function phaseFour() {
+            console.log("Phase 4: Final Void State.");
+            body.classList.add('phase-4');
+
+            // Activate modal immediately after Phase 4 body class change
+            setTimeout(() => {
+                passwordModal.style.display = 'flex';
+            }, 1000); // Delay showing the modal slightly for dramatic effect
+        }
+
+        function phaseFive() {
+             console.log("Phase 5: Final State.");
+             body.classList.add('phase-5');
+             // Nothing more needed here, state is locked in place.
+        }
+
+
+        // --- Execution Sequence ---
+        window.onload = function() {
+            phaseOne(); // Starts the whole sequence
+
+            // Set up timed transitions
+            // Phase 1 -> Phase 2 (3s)
+            setTimeout(phaseTwo, 3000);
+
+            // Phase 2 -> Phase 3/4/5 Start (6s total elapsed time for initial reveal)
+            // We use the nested setTimeout within phaseThree to manage the internal sequence.
+        };
+
+        // --- Helper Functions ---
+        function attemptAccess() {
+             const input = document.getElementById('password-input').value.trim().toUpperCase();
+             if (input === "YARN") { // Arbitrary password for demonstration
+                 alert("ACCESS GRANTED. Welcome to the Core Directory.");
+                 document.body.style.backgroundColor = '#1a1a00'; // Change background dramatically
+             } else if (input === "") {
+                 alert("INPUT REQUIRED.");
+             } else {
+                 alert("SEQUENCE INVALID. THE DIRECTORY REMEMBERS.");
+             }
+        }
+
+    </script>
+
+</body>
+</html>

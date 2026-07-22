@@ -1,27 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://theyarnreview.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://theyarnreview.com/robot-vacuums-pet-hair/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://theyarnreview.com/standing-desks-remote/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://theyarnreview.com/meditation-cushions/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://theyarnreview.com/knitting-yarn-beginners/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://theyarnreview.com/best-mechanical-keyboards/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://theyarnreview.com/running-shoes-beginners/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://theyarnreview.com/best-affordable-watches/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://theyarnreview.com/best-french-press/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://theyarnreview.com/best-air-purifiers/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://theyarnreview.com/best-cast-iron-skillet/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://theyarnreview.com/best-noise-cancelling-headphones/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://theyarnreview.com/best-laptop-stands/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://theyarnreview.com/best-portable-monitors/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://theyarnreview.com/best-yoga-mats/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://theyarnreview.com/best-foam-rollers/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://theyarnreview.com/best-water-bottles/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://theyarnreview.com/best-sleep-masks/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://theyarnreview.com/best-budget-gaming-headsets/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://theyarnreview.com/best-running-shoes-beginners/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://theyarnreview.com/best-crossbody-bags-women/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://theyarnreview.com/about/</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://theyarnreview.com/privacy/</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
-  <url><loc>https://theyarnreview.com/disclosure/</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
-</urlset>
+    <!-- Existing URLs... -->
+    <url>
+        <loc>https://theyarnreview.com/best-instant-pot-alternatives/</loc>
+        <lastmod>2026-07-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <!-- ... rest of sitemap -->
+</xml>

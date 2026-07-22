@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inbox — The Yarn</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="/inbox/inbox.css">
+</head>
+<body>
+
+<div class="login-overlay" id="loginOverlay">
+    <div class="login-box">
+        <div class="login-emblem">The Yarn <span>Inbox</span></div>
+        <div class="login-sub">Content review queue</div>
+        <input type="password" id="pw" placeholder="Password" autocomplete="off">
+        <button onclick="login()">Enter</button>
+        <div class="login-error" id="err">Wrong password.</div>
+    </div>
+</div>
+
+<div class="app" id="app">
+    <div class="topbar">
+        <div class="topbar-brand">The Yarn <span>Inbox</span></div>
+        <div class="topbar-stats" id="stats"></div>
+    </div>
+    <div class="container" id="main"></div>
+</div>
+
+<script src="/inbox/inbox.js"></script>
+</body>
+</html>

@@ -925,10 +925,161 @@ main {
     .footer-bottom { flex-direction: column; gap: 0.5rem; text-align: center; }
 }
 
+/* ── Game Guide Specific ── */
+.guide-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    padding: 1rem 1.25rem;
+    background: var(--white);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.guide-nav a {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: var(--radius);
+    background: var(--cream);
+    color: var(--ink-light);
+    text-decoration: none;
+    transition: background 0.15s, color 0.15s;
+}
+.guide-nav a:hover {
+    background: var(--sage);
+    color: var(--white);
+}
+
+.boss-card {
+    background: var(--cream);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-left: 4px solid var(--sage);
+}
+.boss-card .boss-name {
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    color: var(--ink);
+    margin-bottom: 0.5rem;
+}
+.boss-card .boss-phase {
+    font-weight: 700;
+    color: var(--sage-dark);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.checklist {
+    list-style: none;
+    margin: 1rem 0;
+}
+.checklist li {
+    padding: 0.5rem 0;
+    padding-left: 1.75rem;
+    position: relative;
+    font-size: 0.95rem;
+    border-bottom: 1px solid var(--border);
+}
+.checklist li::before {
+    content: "☐";
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+    color: var(--sage);
+}
+
+.location-list {
+    list-style: none;
+    margin: 1rem 0;
+}
+.location-list li {
+    padding: 0.6rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+.location-list li::before {
+    content: "📍";
+    position: absolute;
+    left: 0;
+    font-size: 0.85rem;
+}
+
+.item-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 0.9rem;
+}
+.item-table th {
+    background: var(--sage-dark);
+    color: var(--white);
+    padding: 0.6rem 1rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+.item-table td {
+    padding: 0.6rem 1rem;
+    border-bottom: 1px solid var(--border);
+}
+.item-table tr:nth-child(even) td { background: var(--cream); }
+.item-table tr:hover td { background: var(--gold-pale); }
+.item-table td:first-child { font-weight: 600; }
+
+.tip-box {
+    background: var(--sage-pale);
+    border-left: 3px solid var(--sage-light);
+    border-radius: var(--radius);
+    padding: 1rem 1.25rem;
+    margin: 1.5rem 0;
+    font-size: 0.9rem;
+}
+.tip-box strong { color: var(--sage-dark); }
+
+.warning-box {
+    background: #fdf6e3;
+    border-left: 3px solid var(--gold);
+    border-radius: var(--radius);
+    padding: 1rem 1.25rem;
+    margin: 1.5rem 0;
+    font-size: 0.9rem;
+}
+.warning-box strong { color: #8a6d1f; }
+
+.guide-section {
+    margin-bottom: 3rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+}
+.guide-section:last-child { border-bottom: none; }
+
+.card-tag {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.2rem 0.6rem;
+    border-radius: 3px;
+    background: var(--sage-pale);
+    color: var(--sage-dark);
+}
+
 @media (max-width: 480px) {
     .hero-inner { padding: 2rem 1rem; }
     .hero-text h1 { font-size: 1.75rem; }
     .method-steps { grid-template-columns: 1fr; }
     .comparison-table { font-size: 0.8rem; }
+    .guide-nav { position: static; flex-direction: column; }
     .comparison-table th, .comparison-table td { padding: 0.5rem 0.5rem; }
 }

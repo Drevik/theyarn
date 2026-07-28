@@ -1,0 +1,2 @@
+# Cloudflare Pages doesn't serve .well-known by default
+# This meta file ensures the directory is included in deployment

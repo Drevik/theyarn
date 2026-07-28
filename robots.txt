@@ -1,13 +1,17 @@
 # The Yarn — robots.txt
-# Allow search engines to index content pages, block internal/ARG paths
+# Allow search engines to index content pages, block internal/legal/ARG paths
+# Full AI bot exclusion — we do not consent to training on our content
 
 User-agent: *
 Allow: /
 Disallow: /loose-thread/
 Disallow: /disclosure/
 Disallow: /privacy/
+Disallow: /terms/
+Disallow: /cookies/
+Disallow: /.well-known/
 
-# Block AI scrapers from training on content
+# AI scrapers — training not permitted
 User-agent: GPTBot
 Disallow: /
 
@@ -25,5 +29,42 @@ Allow: /
 
 User-agent: Applebot-Extended
 Disallow: /
+
+User-agent: Anthropic-AI
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: AI2Bot
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: ImagesiftBot
+Disallow: /
+
+User-agent: YouBot
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /loose-thread/
+Disallow: /disclosure/
+Disallow: /privacy/
+Disallow: /terms/
+Disallow: /cookies/
 
 Sitemap: https://theyarnreview.com/sitemap.xml

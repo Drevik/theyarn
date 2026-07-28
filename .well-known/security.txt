@@ -1,0 +1,9 @@
+Contact: https://theyarnreview.com/about/
+Contact: mailto:security@theyarnreview.com
+Preferred-Languages: en
+Canonical: https://theyarnreview.com/.well-known/security.txt
+
+# Security Policy
+# We take security reports seriously and will respond within 72 hours.
+# Please report vulnerabilities through the contact methods above.
+# We ask that you give us 90 days to address any issues before public disclosure.

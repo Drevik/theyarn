@@ -6,91 +6,119 @@
     "sports-attire",
     "video-game-deals",
     "fashion-accessories",
-    "knitting-crafts",
-    "books-writing"
+    "knitting-crafts"
   ],
-  "next_niche": "home-kitchen",
+  "next_niche": "tech-gadgets",
   "ideas": {
     "home-kitchen": [
-      "best-air-purifiers",
-      "best-cast-iron-skillet",
-      "best-french-press",
-      "best-electric-kettle",
-      "best-instant-pot-alternatives",
-      "best-bidet-attachment",
-      "best-desk-organizer-home-office"
+      "best-espresso-machines-beginners",
+      "best-air-fryers-small-kitchens",
+      "best-stainless-steel-cookware-sets",
+      "best-blenders-smoothie-2026",
+      "best-coffee-grinders-home-baristas"
     ],
     "tech-gadgets": [
-      "best-mechanical-keyboards",
-      "best-budget-gaming-headsets",
-      "best-ereaders-fantasy",
-      "best-portable-monitors"
+      "best-wireless-earbuds-under-100",
+      "best-mechanical-keyboard-beginners-2026",
+      "best-portable-ssd-photographers",
+      "best-webcam-remote-work",
+      "best-monitor-light-bar"
     ],
     "wellness": [
-      "best-foam-rollers",
-      "best-massage-guns",
-      "best-posture-correctors",
-      "best-aromatherapy-diffusers"
+      "best-massage-guns-recovery",
+      "best-sleep-tracking-watches",
+      "best-essential-oil-diffusers",
+      "best-yoga-straps-beginners",
+      "best-cold-plunge-tubs-home"
     ],
     "sports-attire": [
-      "best-running-shoes-beginners",
-      "best-hiking-backpacks-beginners",
-      "best-camping-chairs",
-      "best-camping-stoves-backpackers-2026"
+      "best-trail-running-shoes-beginners",
+      "best-hiking-boots-women",
+      "best-cycling-shoes-beginners",
+      "best-gym-bags-commuters",
+      "best-compression-socks-running"
     ],
     "video-game-deals": [
-      "best-budget-gaming-monitors",
-      "best-gaming-mice-under-50",
-      "best-switch-accessories"
+      "best-ps5-games-under-20",
+      "best-nintendo-switch-accessories",
+      "best-gaming-mouse-under-50",
+      "best-retro-handheld-consoles",
+      "best-gaming-headset-with-mic"
     ],
     "fashion-accessories": [
-      "best-affordable-watches",
-      "best-crossbody-bags-women",
-      "best-leather-wallets-men"
+      "best-sunglasses-running",
+      "best-leather-bags-work",
+      "best-smartwatches-under-200",
+      "best-minimalist-wallets",
+      "best-rain-jackets-commuters"
     ],
     "knitting-crafts": [
-      "beginner-knitting-supplies",
-      "best-yarn-for-beginners",
-      "best-crochet-hooks-set"
-    ],
-    "books-writing": [
-      "best-ereaders-fantasy",
-      "ebooks-for-traveling-students",
-      "advanced-pdf-annotating-techniques"
+      "best-fantasy-doorstoppers",
+      "dystopian-reads-ebooks",
+      "cozy-mystery-readers",
+      "best-knitting-needles-socks",
+      "best-yarn-swifts-winders"
     ]
   },
   "completed": {
     "home-kitchen": [
-      "best-air-purifiers",
+      "best-electric-kettle",
       "best-cast-iron-skillet",
       "best-french-press",
-      "best-electric-kettle",
       "best-instant-pot-alternatives",
       "best-bidet-attachment",
-      "best-desk-organizer-home-office"
+      "best-air-purifiers",
+      "best-humidifier-bedroom",
+      "best-water-bottles",
+      "best-espresso-machines-beginners"
     ],
     "tech-gadgets": [
       "best-mechanical-keyboards",
+      "best-noise-cancelling-headphones",
+      "best-portable-monitors",
+      "best-laptop-stands",
       "best-budget-gaming-headsets",
-      "best-ereaders-fantasy"
+      "best-desk-organizer-home-office",
+      "best-affordable-watches"
     ],
     "wellness": [
-      "best-foam-rollers"
+      "best-yoga-mats",
+      "best-foam-rollers",
+      "best-resistance-bands",
+      "best-sleep-masks",
+      "meditation-cushions"
     ],
     "sports-attire": [
       "best-running-shoes-beginners",
+      "best-camping-chairs",
       "best-hiking-backpacks-beginners",
-      "best-camping-chairs"
+      "best-camping-stoves-backpackers-2026",
+      "running-shoes-beginners",
+      "best-camping-chairs-beginners"
+    ],
+    "video-game-deals": [
+      "best-video-game-deals-2026",
+      "video-game-deals",
+      "budget-pc-gaming-deals",
+      "best-value-gaming-pc-deals",
+      "best-value-gaming-gpu-deals",
+      "best-pc-game-deals-2026"
     ],
     "fashion-accessories": [
-      "best-affordable-watches",
       "best-crossbody-bags-women"
     ],
     "knitting-crafts": [
-      "beginner-knitting-supplies"
-    ],
-    "books-writing": [
+      "e-reader-guide",
+      "best-ereaders-fantasy",
+      "serious-readers-ebook-annotating",
+      "ebooks-for-traveling-students",
+      "beginner-knitting-supplies",
+      "knitting-supplies-for-beginners",
+      "knitting-yarn-beginners",
+      "interchangeable-knitting-needles",
       "books-writing"
     ]
-  }
+  },
+  "last_niche": "home-kitchen",
+  "last_date": "2026-08-10"
 }

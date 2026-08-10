@@ -1,0 +1,55 @@
+<!-- File for /home/Drevik/vault/Affiliate/site/assets/style-updates.css -->
+/* Global styles update to support new article layouts and classes */
+
+.article-page {
+    max-width: 1200px; /* Increased width for modern screens */
+    padding: 2em 40px;
+}
+
+.site-header a, .breadcrumbs a {
+    color: var(--sage);
+    text-decoration: none;
+}
+
+/* Styling the Comparison Table */
+.comparison-table {
+    margin: 3em 0;
+}
+.comparison-table table th {
+    background-color: #e8e6e2 !important; /* Use a light off-white for contrast */
+    font-size: 1.1rem;
+}
+
+/* Product Box Styling (The core element) */
+.product-box {
+    margin-bottom: 4em;
+    padding-top: 1em;
+    border-left: var(--gold); /* Default border color, will be overridden by specific styles */
+}
+.product-box h3 {
+    font-size: 2rem;
+}
+
+/* Product Button Styling */
+.product-btn {
+    transition: background-color 0.2s;
+    border: none; /* Ensure button looks clean */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Sidebar adjustments */
+aside.article-sidebar {
+    float: right;
+    width: 30%;
+    padding-top: 2em !important; /* Match main content top padding */
+}
+
+@media (max-width: 900px) {
+    aside.article-sidebar {
+        width: 100%;
+        float: none;
+        margin-left: 0;
+        margin-top: 2em;
+    }
+}

@@ -8,7 +8,7 @@
     "fashion-accessories",
     "knitting-crafts"
   ],
-  "next_niche": "tech-gadgets",
+  "next_niche": "wellness",
   "ideas": {
     "home-kitchen": [
       "best-espresso-machines-beginners",
@@ -83,7 +83,8 @@
       "best-desk-organizer-home-office",
       "best-affordable-watches",
       "best-wireless-earbuds-under-100",
-      "best-mechanical-keyboard-beginners-2026"
+      "best-mechanical-keyboard-beginners-2026",
+      "best-portable-ssd-photographers"
     ],
     "wellness": [
       "best-yoga-mats",
@@ -133,6 +134,6 @@
       "dystopian-reads-ebooks"
     ]
   },
-  "last_niche": "home-kitchen",
+  "last_niche": "tech-gadgets",
   "last_date": "2026-08-11"
 }

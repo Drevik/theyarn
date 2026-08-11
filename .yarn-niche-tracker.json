@@ -8,7 +8,7 @@
     "fashion-accessories",
     "knitting-crafts"
   ],
-  "next_niche": "wellness",
+  "next_niche": "sports-attire",
   "ideas": {
     "home-kitchen": [
       "best-espresso-machines-beginners",
@@ -93,7 +93,8 @@
       "best-sleep-masks",
       "meditation-cushions",
       "best-massage-guns-recovery",
-      "best-sleep-tracking-watches"
+      "best-sleep-tracking-watches",
+      "best-essential-oil-diffusers"
     ],
     "sports-attire": [
       "best-running-shoes-beginners",
@@ -134,6 +135,6 @@
       "dystopian-reads-ebooks"
     ]
   },
-  "last_niche": "tech-gadgets",
+  "last_niche": "wellness",
   "last_date": "2026-08-11"
 }

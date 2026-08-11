@@ -8,7 +8,7 @@
     "fashion-accessories",
     "knitting-crafts"
   ],
-  "next_niche": "home-kitchen",
+  "next_niche": "tech-gadgets",
   "ideas": {
     "home-kitchen": [
       "best-espresso-machines-beginners",
@@ -70,7 +70,8 @@
       "best-air-purifiers",
       "best-humidifier-bedroom",
       "best-water-bottles",
-      "best-espresso-machines-beginners"
+      "best-espresso-machines-beginners",
+      "best-air-fryers-small-kitchens"
     ],
     "tech-gadgets": [
       "best-mechanical-keyboards",
@@ -125,6 +126,6 @@
       "best-fantasy-doorstoppers"
     ]
   },
-  "last_niche": "knitting-crafts",
+  "last_niche": "home-kitchen",
   "last_date": "2026-08-11"
 }

@@ -8,7 +8,7 @@
     "fashion-accessories",
     "knitting-crafts"
   ],
-  "next_niche": "knitting-crafts",
+  "next_niche": "home-kitchen",
   "ideas": {
     "home-kitchen": [
       "best-espresso-machines-beginners",
@@ -135,9 +135,10 @@
       "interchangeable-knitting-needles",
       "books-writing",
       "best-fantasy-doorstoppers",
-      "dystopian-reads-ebooks"
+      "dystopian-reads-ebooks",
+      "cozy-mystery-readers"
     ]
   },
-  "last_niche": "fashion-accessories",
+  "last_niche": "knitting-crafts",
   "last_date": "2026-08-11"
 }

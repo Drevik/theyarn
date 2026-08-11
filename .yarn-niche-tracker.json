@@ -8,7 +8,7 @@
     "fashion-accessories",
     "knitting-crafts"
   ],
-  "next_niche": "fashion-accessories",
+  "next_niche": "knitting-crafts",
   "ideas": {
     "home-kitchen": [
       "best-espresso-machines-beginners",
@@ -121,7 +121,8 @@
     "fashion-accessories": [
       "best-crossbody-bags-women",
       "best-sunglasses-running",
-      "best-leather-bags-work"
+      "best-leather-bags-work",
+      "best-smartwatches-under-200"
     ],
     "knitting-crafts": [
       "e-reader-guide",
@@ -137,6 +138,6 @@
       "dystopian-reads-ebooks"
     ]
   },
-  "last_niche": "video-game-deals",
+  "last_niche": "fashion-accessories",
   "last_date": "2026-08-11"
 }

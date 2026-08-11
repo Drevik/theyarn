@@ -8,7 +8,7 @@
     "fashion-accessories",
     "knitting-crafts"
   ],
-  "next_niche": "video-game-deals",
+  "next_niche": "fashion-accessories",
   "ideas": {
     "home-kitchen": [
       "best-espresso-machines-beginners",
@@ -105,7 +105,8 @@
       "budget-pc-gaming-deals",
       "best-value-gaming-pc-deals",
       "best-value-gaming-gpu-deals",
-      "best-pc-game-deals-2026"
+      "best-pc-game-deals-2026",
+      "best-ps5-games-under-20"
     ],
     "fashion-accessories": [
       "best-crossbody-bags-women"
@@ -122,6 +123,6 @@
       "books-writing"
     ]
   },
-  "last_niche": "sports-attire",
+  "last_niche": "video-game-deals",
   "last_date": "2026-08-11"
 }

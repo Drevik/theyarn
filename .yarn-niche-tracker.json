@@ -8,7 +8,7 @@
     "fashion-accessories",
     "knitting-crafts"
   ],
-  "next_niche": "sports-attire",
+  "next_niche": "video-game-deals",
   "ideas": {
     "home-kitchen": [
       "best-espresso-machines-beginners",
@@ -100,7 +100,8 @@
       "best-camping-stoves-backpackers-2026",
       "running-shoes-beginners",
       "best-camping-chairs-beginners",
-      "best-trail-running-shoes-beginners"
+      "best-trail-running-shoes-beginners",
+      "best-hiking-boots-women"
     ],
     "video-game-deals": [
       "best-video-game-deals-2026",
@@ -128,6 +129,6 @@
       "best-fantasy-doorstoppers"
     ]
   },
-  "last_niche": "wellness",
+  "last_niche": "sports-attire",
   "last_date": "2026-08-11"
 }

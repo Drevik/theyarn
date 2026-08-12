@@ -8,7 +8,7 @@
     "fashion-accessories",
     "knitting-crafts"
   ],
-  "next_niche": "tech-gadgets",
+  "next_niche": "wellness",
   "ideas": {
     "home-kitchen": [
       "best-espresso-machines-beginners",
@@ -53,11 +53,18 @@
       "best-rain-jackets-commuters"
     ],
     "knitting-crafts": [
+      "e-reader-guide",
+      "serious-readers-ebook-annotating",
+      "ebooks-for-traveling-students",
+      "beginner-knitting-supplies",
+      "knitting-supplies-for-beginners",
+      "knitting-yarn-beginners",
+      "interchangeable-knitting-needles",
+      "books-writing",
       "best-fantasy-doorstoppers",
       "dystopian-reads-ebooks",
       "cozy-mystery-readers",
-      "best-knitting-needles-socks",
-      "best-yarn-swifts-winders"
+      "best-ereaders-fantasy"
     ]
   },
   "completed": {
@@ -85,7 +92,8 @@
       "best-affordable-watches",
       "best-wireless-earbuds-under-100",
       "best-mechanical-keyboard-beginners-2026",
-      "best-portable-ssd-photographers"
+      "best-portable-ssd-photographers",
+      "best-webcam-remote-work"
     ],
     "wellness": [
       "best-yoga-mats",
@@ -127,7 +135,6 @@
     ],
     "knitting-crafts": [
       "e-reader-guide",
-      "best-ereaders-fantasy",
       "serious-readers-ebook-annotating",
       "ebooks-for-traveling-students",
       "beginner-knitting-supplies",
@@ -137,9 +144,10 @@
       "books-writing",
       "best-fantasy-doorstoppers",
       "dystopian-reads-ebooks",
-      "cozy-mystery-readers"
+      "cozy-mystery-readers",
+      "best-ereaders-fantasy"
     ]
   },
-  "last_niche": "home-kitchen",
-  "last_date": "2026-08-11"
+  "last_niche": "tech-gadgets",
+  "last_date": "2026-08-12"
 }

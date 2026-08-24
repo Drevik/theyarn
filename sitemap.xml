@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://www.theyarn.com/</loc>
-        <lastmod>2026-08-15</lastmod>
+        <lastmod>2026-08-19</lastmod>
         <changefreq>daily</changefreq>
     </url>
     <url>
@@ -15,21 +15,41 @@
         <lastmod>2026-08-13</lastmod>
         <changefreq>weekly</changefreq>
     </url>
+    <!-- NEW: Updated video game deals category page -->
+    <url>
+        <loc>https://www.theyarn.com/video-game-deals/</loc>
+        <lastmod>2026-08-22</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://www.theyarn.com/video-game-deals/best-pc-gaming-deals-2026/</loc>
+        <lastmod>2026-08-22</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    <!-- Old and other existing links retained below -->
     <url>
         <loc>https://www.theyarn.com/video-game-deals/best-gaming-headset-deals/</loc>
         <lastmod>2026-08-15</lastmod>
         <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://theyarnreview.com/best-massage-guns-recovery/</loc>
-        <lastmod>2026-08-17</lastmod>
+        <loc>https://www.theyarn.com/best-video-game-deals-august-2026/</loc>
+        <lastmod>2026-08-19</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://theyarnreview.com/best-trail-running-shoes-beginners/</loc>
+        <loc>https://www.theyarn.com/best-massage-guns-recovery/</loc>
+        <lastmod>2026-08-17</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://www.theyarn.com/best-trail-running-shoes-beginners/</loc>
         <lastmod>2026-08-18</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.theyarn.com/best-knitting-needle-sets/</loc>
+        <lastmod>2026-08-20</lastmod>
+        <changefreq>weekly</changefreq>
     </url>
 </urlset>

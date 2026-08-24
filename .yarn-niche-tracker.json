@@ -1,99 +1,26 @@
 {
   "niches": [
-    "home-kitchen",
-    "tech-gadgets",
-    "wellness",
-    "sports-attire",
-    "video-game-deals",
-    "fashion-accessories",
-    "knitting-crafts"
+    "home-kitchen", "tech-gadgets", "wellness", "sports-attire", "video-game-deals", "fashion-accessories", "books-reading", "knitting-crafts"
   ],
-  "next_niche": "video-game-deals",
+  "next_niche": "home-kitchen",
   "ideas": {
-    "home-kitchen": [
-      "best-espresso-machines-beginners",
-      "best-air-fryers-small-kitchens",
-      "best-stainless-steel-cookware-sets",
-      "best-blenders-smoothie-2026",
-      "best-coffee-grinders-home-baristas"
-    ],
-    "tech-gadgets": [
-      "best-wireless-earbuds-under-100",
-      "best-mechanical-keyboard-beginners-2026",
-      "best-portable-ssd-photographers",
-      "best-webcam-remote-work",
-      "best-monitor-light-bar"
-    ],
-    "wellness": [
-      "best-massage-guns-recovery",
-      "best-sleep-tracking-watches",
-      "best-essential-oil-diffusers",
-      "best-yoga-straps-beginners",
-      "best-cold-plunge-tubs-home"
-    ],
-    "sports-attire": [
-      "best-trail-running-shoes-beginners",
-      "best-hiking-boots-women",
-      "best-cycling-shoes-beginners",
-      "best-gym-bags-commuters",
-      "best-compression-socks-running"
-    ],
-    "video-game-deals": [
-      "best-ps5-games-under-20",
-      "best-nintendo-switch-accessories",
-      "best-gaming-mouse-under-50",
-      "best-retro-handheld-consoles",
-      "best-gaming-headset-with-mic"
-    ],
-    "fashion-accessories": [
-      "best-sunglasses-running",
-      "best-leather-bags-work",
-      "best-smartwatches-under-200",
-      "best-minimalist-wallets",
-      "best-rain-jackets-commuters"
-    ],
-    "knitting-crafts": [
-      "e-reader-guide",
-      "serious-readers-ebook-annotating",
-      "ebooks-for-traveling-students",
-      "beginner-knitting-supplies",
-      "knitting-supplies-for-beginners",
-      "knitting-yarn-beginners",
-      "interchangeable-knitting-needles",
-      "books-writing",
-      "best-fantasy-doorstoppers",
-      "dystopian-reads-ebooks",
-      "cozy-mystery-readers",
-      "best-e-reader-for-serious-readers"
-    ]
+    "home-kitchen": ["best-blenders-smoothie-2026"],
+    "tech-gadgets": ["best-monitor-light-bar"],
+    "wellness": ["best-massage-guns-recovery", "best-sleep-tracking-watches", "best-essential-oil-diffusers", "best-yoga-straps-beginners", "best-cold-plunge-tubs-home"],
+    "sports-attire": ["best-compression-socks-running"],
+    "video-game-deals": ["best-gaming-headset-with-mic"],
+    "fashion-accessories": ["best-rain-jackets-commuters"],
+    "books-reading": ["best-e-reader-for-serious-readers"],
+    "knitting-crafts": ["best-knitting-needle-sets"]
   },
   "completed": {
-    "home-kitchen": [
-      "best-electric-kettle",
-      "best-cast-iron-skillet",
-      "best-french-press",
-      "best-instant-pot-alternatives",
-      "best-bidet-attachment",
-      "best-air-purifiers",
-      "best-humidifier-bedroom",
-      "best-water-bottles",
-      "best-espresso-machines-beginners",
-      "best-air-fryers-small-kitchens",
-      "best-stainless-steel-cookware-sets",
-      "best-blenders-smoothie-2026"
-    ],
-    "tech-gadgets": [
-      "best-mechanical-keyboards",
-      "best-... [truncated]",
-      "e-reader-guide"
-    ],
-    "wellness": [
-      "best-massage-guns-recovery"
-    ],
-    "sports-attire": [
-      "best-trail-running-shoes-beginners"
-    ]
+    "home-kitchen": ["best-electric-kettle", "best-air-fryers-small-kitchens"],
+    "tech-gadgets": ["best-mechanical-keyboards", "best-e-reader-guide"],
+    "wellness": ["best-massage-guns-recovery"],
+    "sports-attire": ["best-trail-running-shoes-beginners"],
+    "books-reading": ["best-e-reader-for-serious-readers"],
+    "knitting-crafts": ["best-knitting-needle-sets"]
   },
-  "last_niche": "sports-attire",
-  "last_date": "2026-08-18"
+  "last_niche": "knitting-crafts",
+  "last_date": "2026-08-20"
 }

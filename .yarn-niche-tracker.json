@@ -1,26 +1,70 @@
 {
   "niches": [
-    "home-kitchen", "tech-gadgets", "wellness", "sports-attire", "video-game-deals", "fashion-accessories", "books-reading", "knitting-crafts"
+    "home-kitchen",
+    "tech-gadgets",
+    "wellness",
+    "sports-attire",
+    "video-game-deals",
+    "fashion-accessories",
+    "books-reading",
+    "knitting-crafts"
   ],
-  "next_niche": "home-kitchen",
+  "next_niche": "sports-attire",
   "ideas": {
-    "home-kitchen": ["best-blenders-smoothie-2026"],
-    "tech-gadgets": ["best-monitor-light-bar"],
-    "wellness": ["best-massage-guns-recovery", "best-sleep-tracking-watches", "best-essential-oil-diffusers", "best-yoga-straps-beginners", "best-cold-plunge-tubs-home"],
-    "sports-attire": ["best-compression-socks-running"],
-    "video-game-deals": ["best-gaming-headset-with-mic"],
-    "fashion-accessories": ["best-rain-jackets-commuters"],
-    "books-reading": ["best-e-reader-for-serious-readers"],
-    "knitting-crafts": ["best-knitting-needle-sets"]
+    "home-kitchen": [
+      "best-blenders-smoothie-2026",
+      "best-air-fryers-small-kitchens"
+    ],
+    "tech-gadgets": [
+      "best-monitor-light-bar"
+    ],
+    "wellness": [
+      "best-massage-guns-recovery",
+      "best-sleep-tracking-watches",
+      "best-essential-oil-diffusers",
+      "best-yoga-straps-beginners",
+      "best-cold-plunge-tubs-home"
+    ],
+    "sports-attire": [
+      "best-compression-socks-running"
+    ],
+    "video-game-deals": [
+      "best-gaming-headset-with-mic"
+    ],
+    "fashion-accessories": [
+      "best-rain-jackets-commuters"
+    ],
+    "books-reading": [],
+    "knitting-crafts": [
+      "best-knitting-needle-sets"
+    ]
   },
   "completed": {
-    "home-kitchen": ["best-electric-kettle", "best-air-fryers-small-kitchens"],
-    "tech-gadgets": ["best-mechanical-keyboards", "best-e-reader-guide"],
-    "wellness": ["best-massage-guns-recovery"],
-    "sports-attire": ["best-trail-running-shoes-beginners"],
-    "books-reading": ["best-e-reader-for-serious-readers"],
-    "knitting-crafts": ["best-knitting-needle-sets"]
+    "home-kitchen": [
+      "best-electric-kettle",
+      "best-air-fryers-small-kitchens",
+      "best-blenders-smoothie-2026"
+    ],
+    "tech-gadgets": [
+      "best-mechanical-keyboards",
+      "best-e-reader-guide",
+      "best-monitor-light-bar"
+    ],
+    "wellness": [
+      "best-massage-guns-recovery",
+      "best-sleep-tracking-watches"
+    ],
+    "sports-attire": [
+      "best-trail-running-shoes-beginners"
+    ],
+    "books-reading": [
+      "best-e-reader-for-serious-readers",
+      "best-book-lights-for-reading"
+    ],
+    "knitting-crafts": [
+      "best-knitting-needle-sets"
+    ]
   },
-  "last_niche": "knitting-crafts",
-  "last_date": "2026-08-20"
+  "last_niche": "wellness",
+  "last_date": "2026-08-31"
 }

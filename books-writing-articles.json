@@ -19,7 +19,7 @@
     "sports-attire": ["best-running-shoes-beginners"],
     "video-game-deals": ["best-budget-gaming-headsets"],
     "fashion-accessories": ["best-affordable-watches", "best-crossbody-bags-women"],
-    "books-writing": []
+    "books-writing": ["best-book-lights-for-reading"]
   },
   "ideas": {
     "home-kitchen": ["best-instant-pot-alternatives", "best-coffee-grinders", "best-dish-racks-small-kitchens"],
@@ -37,8 +37,7 @@
       "best-story-structure-books",
       "best-worldbuilding-books",
       "best-book-stands-and-holders",
-      "best-ereaders-for-avid-readers",
-      "best-book-lights-for-reading"
+      "best-ereaders-for-avid-readers"
     ]
   }
 }

@@ -9,7 +9,7 @@
     "books-reading",
     "knitting-crafts"
   ],
-  "next_niche": "sports-attire",
+  "next_niche": "fashion-accessories",
   "ideas": {
     "home-kitchen": [
       "best-blenders-smoothie-2026",
@@ -20,14 +20,9 @@
     ],
     "wellness": [
       "best-massage-guns-recovery",
-      "best-sleep-tracking-watches",
-      "best-essential-oil-diffusers",
-      "best-yoga-straps-beginners",
-      "best-cold-plunge-tubs-home"
+      "best-sleep-tracking-watches"
     ],
-    "sports-attire": [
-      "best-compression-socks-running"
-    ],
+    "sports-attire": [],
     "video-game-deals": [
       "best-gaming-headset-with-mic"
     ],
@@ -63,8 +58,12 @@
     ],
     "knitting-crafts": [
       "best-knitting-needle-sets"
+    ],
+    "video-game-deals": [
+      "best-gaming-headset-with-mic"
     ]
   },
-  "last_niche": "wellness",
-  "last_date": "2026-08-31"
+  "last_niche": "video-game-deals",
+  "completed_articles": "best-compression-socks-running",
+  "last_date": "2026-09-01"
 }

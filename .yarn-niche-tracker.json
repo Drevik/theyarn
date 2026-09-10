@@ -21,10 +21,12 @@
       "E-Reader Ecosystem Comparison (Kindle vs Kobo)"
     ],
     "home-kitchen": [
-      "Best Air Fryers for Small Kitchens"
+      "Best Air Fryers for Small Kitchens",
+      "Best Compact Espresso Machines"
     ]
   },
-  "next_niche": "home-kitchen",
-  "last_niche": "books-writing",
-  "last_article": "e-reader-ecosystem-comparison"
+  "next_niche": "books-writing",
+  "last_niche": "home-kitchen",
+  "last_article": "e-reader-ecosystem-comparison",
+  "last_date": "2026-09-10"
 }

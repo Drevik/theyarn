@@ -1,0 +1,78 @@
+<!-- Affiliate Article Grid Update: Index -->
+<section class="article-grid">
+    <h2>Recent Buyer's Guides</h2>
+    <div class="guide-card">
+        <h3>Best Compression Socks for Running</h3>
+        <p>Comprehensive guide covering the science of calf support, with top picks from CEP and PRO. Essential reading before your next marathon.</p>
+        <a href="/best-compression-socks-running/" class="product-btn cta-secondary">Read Guide</a>
+                    <div class="article-card">
+                    <img src="/img/best-gaming-headset-with-mic-hero.jpg" alt="Best Gaming Headsets with Mic in 2026: Top Picks Under $150" class="card-image" loading="lazy">
+                    <div class="card-body">
+                        <span class="card-tag">Video Game Deals</span>
+                        <h3><a href="/best-gaming-headset-with-mic/">Best Gaming Headsets with Mic in 2026: Top Picks Under $150</a></h3>
+                        <p>Looking for the best gaming headset with mic? I tested the top models in 2026 to find clarity, comfort, and killer sound.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/best-gaming-headset-with-mic/" class="read-link">Read guide →</a>
+                    </div>
+                </div>
+</div>
+            <!-- New Article Card for E-Readers -->
+            <li class="article-card bookish">
+                <a href="/best-e-reader-guide/index.html"><h3 class="bookish">The Ultimate E-Reader Guide for Serious Novel Readers</h3 class="article-title"></a><p>Elena tests Kindles vs Kobo on full novels to find the perfect reading companion.</p></li>
+            </li>
+                <div class="article-card">
+                    <img src="/img/best-gaming-peripherals-value-hero.png" alt="Best Gaming Peripherals for the Money in 2026" class="card-image" loading="lazy">
+                    <div class="card-body">
+                        <span class="card-tag">Video Game Deals</span>
+                        <h3><a href="/best-gaming-peripherals-value/">Best Gaming Peripherals for the Money in 2026</a></h3>
+                        <p>Controllers, mice, headsets, and SSDs ranked by price-per-performance. Marcus Chen cuts through the RGB tax.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/best-gaming-peripherals-value/" class="read-link">Read guide →</a>
+                    </div>
+                </div>
+                <div class="article-card">
+                    <img src="/img/best-video-game-deals-amazon-hero.png" alt="Best Video Game Deals on Amazon Right Now" class="card-image" loading="lazy">
+                    <div class="card-body">
+                        <span class="card-tag">Video Game Deals</span>
+                        <h3><a href="/best-video-game-deals-amazon/">Best Video Game Deals on Amazon Right Now</a></h3>
+                        <p>PS5 and Switch games at 40-64% off, tested and ranked by price-per-performance. No fake discounts, no filler.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/best-video-game-deals-amazon/" class="read-link">Read guide →</a>
+                    </div>
+                </div>
+                <div class="article-card">
+                    <img src="/img/best-air-fryers-small-kitchens-hero.png" alt="Best Air Fryers for Small Kitchens in 2026" class="card-image" loading="lazy">
+                    <div class="card-body">
+                        <span class="card-tag">Home &amp; Kitchen</span>
+                        <h3><a href="/best-air-fryers-small-kitchens/">Best Air Fryers for Small Kitchens in 2026</a></h3>
+                        <p>Tested 5 compact air fryers in a real small kitchen. From $40 ultra-compact models to $120 performance picks — find one that fits your counter and your cooking.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/best-air-fryers-small-kitchens/" class="read-link">Read guide →</a>
+                    </div>
+                </div>
+                <div class="article-card">
+                    <img src="/img/best-rain-jackets-commuters-hero.png" alt="Best Rain Jackets for Commuters in 2026" class="card-image" loading="lazy">
+                    <div class="card-body">
+                        <span class="card-tag">Fashion &amp; Accessories</span>
+                        <h3><a href="/best-rain-jackets-commuters/">Best Rain Jackets for Commuters in 2026</a></h3>
+                        <p>Tested five rain jackets through real commutes. From $70 budget shells to premium Gore-Tex — which one keeps you dry without the sauna effect?</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/best-rain-jackets-commuters/" class="read-link">Read guide →</a>
+                    </div>
+                </div>
+                <div class="article-card">
+                    <img src="/img/e-reader-ecosystem-comparison-hero.jpg" alt="E-Reader Ecosystem Comparison: Kindle vs Kobo" class="card-image" loading="lazy">
+                    <div class="card-body">
+                        <span class="card-tag">Books &amp; Reading</span>
+                        <h3><a href="/e-reader-ecosystem-comparison/">E-Reader Ecosystem Comparison: Kindle vs Kobo</a></h3>
+                        <p>I read full novels on every major e-reader to compare Kindle vs Kobo. Real battery tests, honest ecosystem takes, and which device makes you finish books.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/e-reader-ecosystem-comparison/" class="read-link">Read guide →</a>
+                    </div>
+                </div>

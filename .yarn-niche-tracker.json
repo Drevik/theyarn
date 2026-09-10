@@ -1,69 +1,30 @@
 {
   "niches": [
     "home-kitchen",
-    "tech-gadgets",
-    "wellness",
-    "sports-attire",
-    "video-game-deals",
-    "fashion-accessories",
-    "books-reading",
-    "knitting-crafts"
+    "books-writing"
   ],
-  "next_niche": "fashion-accessories",
   "ideas": {
+    "books-writing": [
+      "Best Color E-Readers for Manga?",
+      "Pocket Digital Library Workflow Guide"
+    ],
     "home-kitchen": [
-      "best-blenders-smoothie-2026",
-      "best-air-fryers-small-kitchens"
-    ],
-    "tech-gadgets": [
-      "best-monitor-light-bar"
-    ],
-    "wellness": [
-      "best-massage-guns-recovery",
-      "best-sleep-tracking-watches"
-    ],
-    "sports-attire": [],
-    "video-game-deals": [
-      "best-gaming-headset-with-mic"
-    ],
-    "fashion-accessories": [
-      "best-rain-jackets-commuters"
-    ],
-    "books-reading": [],
-    "knitting-crafts": [
-      "best-knitting-needle-sets"
+      "Best Compact Espresso Machines",
+      "Best Japanese Knives for Home Cooks",
+      "Best Countertop Dishwashers"
     ]
   },
   "completed": {
+    "books-writing": [
+      "Tech Trends 2025",
+      "Smart Home Setup",
+      "E-Reader Ecosystem Comparison (Kindle vs Kobo)"
+    ],
     "home-kitchen": [
-      "best-electric-kettle",
-      "best-air-fryers-small-kitchens",
-      "best-blenders-smoothie-2026"
-    ],
-    "tech-gadgets": [
-      "best-mechanical-keyboards",
-      "best-e-reader-guide",
-      "best-monitor-light-bar"
-    ],
-    "wellness": [
-      "best-massage-guns-recovery",
-      "best-sleep-tracking-watches"
-    ],
-    "sports-attire": [
-      "best-trail-running-shoes-beginners"
-    ],
-    "books-reading": [
-      "best-e-reader-for-serious-readers",
-      "best-book-lights-for-reading"
-    ],
-    "knitting-crafts": [
-      "best-knitting-needle-sets"
-    ],
-    "video-game-deals": [
-      "best-gaming-headset-with-mic"
+      "Best Air Fryers for Small Kitchens"
     ]
   },
-  "last_niche": "video-game-deals",
-  "completed_articles": "best-compression-socks-running",
-  "last_date": "2026-09-01"
+  "next_niche": "home-kitchen",
+  "last_niche": "books-writing",
+  "last_article": "e-reader-ecosystem-comparison"
 }

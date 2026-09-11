@@ -5,11 +5,9 @@
   ],
   "ideas": {
     "books-writing": [
-      "Best Color E-Readers for Manga?",
       "Pocket Digital Library Workflow Guide"
     ],
     "home-kitchen": [
-      "Best Compact Espresso Machines",
       "Best Japanese Knives for Home Cooks",
       "Best Countertop Dishwashers"
     ]
@@ -18,15 +16,17 @@
     "books-writing": [
       "Tech Trends 2025",
       "Smart Home Setup",
-      "E-Reader Ecosystem Comparison (Kindle vs Kobo)"
+      "E-Reader Ecosystem Comparison (Kindle vs Kobo)",
+      "Best Color E-Readers for Manga",
+      "pocket-digital-library-guide"
     ],
     "home-kitchen": [
       "Best Air Fryers for Small Kitchens",
       "Best Compact Espresso Machines"
     ]
   },
-  "next_niche": "books-writing",
-  "last_niche": "home-kitchen",
-  "last_article": "e-reader-ecosystem-comparison",
-  "last_date": "2026-09-10"
+  "next_niche": "home-kitchen",
+  "last_niche": "books-writing",
+  "last_article": "pocket-digital-library-guide",
+  "last_date": "2026-09-11"
 }

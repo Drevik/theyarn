@@ -2,7 +2,9 @@
   "niches": [
     "home-kitchen",
     "books-writing",
-    "wellness"
+    "wellness",
+    "fashion-accessories",
+    "sports-outdoors"
   ],
   "ideas": {
     "books-writing": [
@@ -15,6 +17,15 @@
     "wellness": [
       "Best Yoga Mats for Home Practice",
       "Best Massage Guns for Recovery"
+    ],
+    "fashion-accessories": [
+      "Best Silk Scarves for Women",
+      "Best Crossbody Bags for Travel",
+      "Best Minimalist Jewelry"
+    ],
+    "sports-outdoors": [
+      "Best Hiking Backpacks",
+      "Best Camping Tents for Beginners"
     ]
   },
   "completed": {
@@ -28,16 +39,25 @@
     "home-kitchen": [
       "Best Air Fryers for Small Kitchens",
       "Best Compact Espresso Machines",
-      "Best Pour Over Coffee Makers"
+      "Best Pour Over Coffee Makers",
+      "Best Compact Espresso Machines (Rewrite)"
     ],
     "wellness": [
       "Best Cold Plunge Tubs",
       "Best Adjustable Dumbbells",
       "Best Sauna Blankets"
+    ],
+    "fashion-accessories": [
+      "Best Silk Pillowcases",
+      "Best Weekender Bags for Women",
+      "Best Minimalist Watches for Women"
+    ],
+    "sports-outdoors": [
+      "Best Camping Chairs"
     ]
   },
-  "next_niche": "wellness",
-  "last_niche": "home-kitchen",
-  "last_article": "best-pour-over-coffee-makers",
+  "next_niche": "fashion-accessories",
+  "last_niche": "fashion-accessories",
+  "last_article": "best-minimalist-watches-women",
   "last_date": "2026-09-11"
 }

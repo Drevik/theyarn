@@ -1,7 +1,8 @@
 {
   "niches": [
     "home-kitchen",
-    "books-writing"
+    "books-writing",
+    "wellness"
   ],
   "ideas": {
     "books-writing": [
@@ -10,6 +11,10 @@
     "home-kitchen": [
       "Best Japanese Knives for Home Cooks",
       "Best Countertop Dishwashers"
+    ],
+    "wellness": [
+      "Best Yoga Mats for Home Practice",
+      "Best Massage Guns for Recovery"
     ]
   },
   "completed": {
@@ -22,11 +27,17 @@
     ],
     "home-kitchen": [
       "Best Air Fryers for Small Kitchens",
-      "Best Compact Espresso Machines"
+      "Best Compact Espresso Machines",
+      "Best Pour Over Coffee Makers"
+    ],
+    "wellness": [
+      "Best Cold Plunge Tubs",
+      "Best Adjustable Dumbbells",
+      "Best Sauna Blankets"
     ]
   },
-  "next_niche": "home-kitchen",
-  "last_niche": "books-writing",
-  "last_article": "pocket-digital-library-guide",
+  "next_niche": "wellness",
+  "last_niche": "home-kitchen",
+  "last_article": "best-pour-over-coffee-makers",
   "last_date": "2026-09-11"
 }

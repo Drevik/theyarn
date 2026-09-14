@@ -8,24 +8,39 @@
   ],
   "ideas": {
     "books-writing": [
-      "Pocket Digital Library Workflow Guide"
+      "Pocket Digital Library Workflow Guide",
+      "Best E-Readers for Manga 2026 (trending: color e-ink)",
+      "Best Book Lights for Late Night Reading",
+      "Best Fantasy Doorstopper Novels 2026"
     ],
     "home-kitchen": [
       "Best Japanese Knives for Home Cooks",
-      "Best Countertop Dishwashers"
+      "Best Countertop Dishwashers",
+      "Best Japanese Knives for Home Cooks (Tojiro, MAC, Shun budget picks)",
+      "Best Santoku Knives Under $100",
+      "Best Kitchen Knife Sets 2026"
     ],
     "wellness": [
       "Best Yoga Mats for Home Practice",
-      "Best Massage Guns for Recovery"
+      "Best Massage Guns for Recovery",
+      "Best Hot Yoga Mats 2026 (trending: Adapt 2.0, Manduka PRO)",
+      "Best Yoga Mats for Beginners (Gaiam, Iuga Eco)",
+      "Best Foam Rollers for Recovery 2026"
     ],
     "fashion-accessories": [
       "Best Silk Scarves for Women",
       "Best Crossbody Bags for Travel",
-      "Best Minimalist Jewelry"
+      "Best Minimalist Jewelry",
+      "Best Silk Scarves for Women 2026 (trending: Tote-me, Longchamp, vintage Etsy)",
+      "How to Style a Silk Scarf \u2014 10 Ways",
+      "Best Affordable Silk Scarves Under $50"
     ],
     "sports-outdoors": [
       "Best Hiking Backpacks",
-      "Best Camping Tents for Beginners"
+      "Best Camping Tents for Beginners",
+      "Best Hiking Backpacks for Beginners 2026",
+      "Best Trail Running Shoes for Beginners",
+      "Best Cold Plunge Tubs for Home"
     ]
   },
   "completed": {
@@ -50,14 +65,15 @@
     "fashion-accessories": [
       "Best Silk Pillowcases",
       "Best Weekender Bags for Women",
-      "Best Minimalist Watches for Women"
+      "Best Minimalist Watches for Women",
+      "Best Silk Scarves for Women"
     ],
     "sports-outdoors": [
       "Best Camping Chairs"
     ]
   },
-  "next_niche": "fashion-accessories",
+  "next_niche": "sports-outdoors",
   "last_niche": "fashion-accessories",
   "last_article": "best-minimalist-watches-women",
-  "last_date": "2026-09-11"
+  "last_date": "2026-09-14"
 }

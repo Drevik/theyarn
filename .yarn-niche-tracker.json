@@ -69,11 +69,12 @@
       "Best Silk Scarves for Women"
     ],
     "sports-outdoors": [
-      "Best Camping Chairs"
+      "Best Camping Chairs",
+      "Best Hiking Backpacks"
     ]
   },
-  "next_niche": "sports-outdoors",
-  "last_niche": "fashion-accessories",
+  "next_niche": "home-kitchen",
+  "last_niche": "sports-outdoors",
   "last_article": "best-minimalist-watches-women",
-  "last_date": "2026-09-14"
+  "last_date": "2026-09-15"
 }

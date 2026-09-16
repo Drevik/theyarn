@@ -55,7 +55,8 @@
       "Best Air Fryers for Small Kitchens",
       "Best Compact Espresso Machines",
       "Best Pour Over Coffee Makers",
-      "Best Compact Espresso Machines (Rewrite)"
+      "Best Compact Espresso Machines (Rewrite)",
+      "Best Japanese Knives for Home Cooks"
     ],
     "wellness": [
       "Best Cold Plunge Tubs",
@@ -73,8 +74,8 @@
       "Best Hiking Backpacks"
     ]
   },
-  "next_niche": "home-kitchen",
-  "last_niche": "sports-outdoors",
+  "next_niche": "books-writing",
+  "last_niche": "home-kitchen",
   "last_article": "best-minimalist-watches-women",
-  "last_date": "2026-09-15"
+  "last_date": "2026-09-16"
 }

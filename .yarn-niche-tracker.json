@@ -49,7 +49,8 @@
       "Smart Home Setup",
       "E-Reader Ecosystem Comparison (Kindle vs Kobo)",
       "Best Color E-Readers for Manga",
-      "pocket-digital-library-guide"
+      "pocket-digital-library-guide",
+      "Pocket Digital Library Workflow Guide"
     ],
     "home-kitchen": [
       "Best Air Fryers for Small Kitchens",
@@ -74,8 +75,8 @@
       "Best Hiking Backpacks"
     ]
   },
-  "next_niche": "books-writing",
-  "last_niche": "home-kitchen",
+  "next_niche": "wellness",
+  "last_niche": "books-writing",
   "last_article": "best-minimalist-watches-women",
-  "last_date": "2026-09-16"
+  "last_date": "2026-09-17"
 }

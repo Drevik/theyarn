@@ -1,0 +1,9 @@
+{
+  "_comment": "page-dir -> {product, slug_or_null (real Payhip slug), blurb}. Script renders box ONLY when slug is non-null (YAGNI).",
+  "mappings": [
+    {"match_any": ["ai-productivity", "ai-bookkeeping", "ai-crypto", "ai-finance", "ai-wealth", "ai-arbitrage", "passive-income", "algorithmic", "personal-finance", "financial", "finance", "income", "money", "budget"], "product": "devops-llm-prompt-library", "slug": null, "blurb": "Skip the setup — this ready-made prompt library automates the workflows this article describes. Built by The Yarn, instant download."},
+    {"match_any": ["ai-generated", "ai-writing", "content-editor", "humanization", "revision", "writing"], "product": "humanization-toolkit", "slug": null, "blurb": "Make AI drafts read like a human wrote them. The exact toolkit behind this site's editing pass."},
+    {"match_any": ["affiliate-marketing", "youtube", "content-creation", "creator"], "product": "youtube-gap-method", "slug": null, "blurb": "The keyword-gap method we use to find low-competition topics. Includes the worksheet."},
+    {"match_any": ["dnd", "dnd-encounter", "dungeon", "campaign"], "product": "dnd-oneshot-collection-vol1", "slug": null, "blurb": "Five tested one-shots with maps, stat blocks, and handouts. Run your next session straight from the PDF."}
+  ]
+}

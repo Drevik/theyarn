@@ -829,6 +829,12 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://theyarnreview.com/defi-yield-aggregators-reviewing-automation-tools-passive/</loc>
+        <lastmod>2026-09-23</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://theyarnreview.com/depin-hardware-review-physical-crypto-infrastructure/</loc>
         <lastmod>2026-09-23</lastmod>
         <changefreq>weekly</changefreq>
@@ -1016,6 +1022,12 @@
     </url>
     <url>
         <loc>https://theyarnreview.com/loose-thread/</loc>
+        <lastmod>2026-09-23</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://theyarnreview.com/manual-vs-automated-which-subscription-audit-tool-saves-you/</loc>
         <lastmod>2026-09-23</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>

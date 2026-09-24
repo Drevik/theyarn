@@ -62,7 +62,8 @@
     "wellness": [
       "Best Cold Plunge Tubs",
       "Best Adjustable Dumbbells",
-      "Best Sauna Blankets"
+      "Best Sauna Blankets",
+      "Best Yoga Mats for Home Practice"
     ],
     "fashion-accessories": [
       "Best Silk Pillowcases",
@@ -75,8 +76,8 @@
       "Best Hiking Backpacks"
     ]
   },
-  "next_niche": "wellness",
-  "last_niche": "books-writing",
+  "next_niche": "fashion-accessories",
+  "last_niche": "wellness",
   "last_article": "best-minimalist-watches-women",
-  "last_date": "2026-09-17"
+  "last_date": "2026-09-24"
 }

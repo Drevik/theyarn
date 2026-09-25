@@ -69,15 +69,16 @@
       "Best Silk Pillowcases",
       "Best Weekender Bags for Women",
       "Best Minimalist Watches for Women",
-      "Best Silk Scarves for Women"
+      "Best Silk Scarves for Women",
+      "Best Crossbody Bags for Travel"
     ],
     "sports-outdoors": [
       "Best Camping Chairs",
       "Best Hiking Backpacks"
     ]
   },
-  "next_niche": "fashion-accessories",
-  "last_niche": "wellness",
+  "next_niche": "sports-outdoors",
+  "last_niche": "fashion-accessories",
   "last_article": "best-minimalist-watches-women",
-  "last_date": "2026-09-24"
+  "last_date": "2026-09-25"
 }

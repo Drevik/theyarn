@@ -74,11 +74,12 @@
     ],
     "sports-outdoors": [
       "Best Camping Chairs",
-      "Best Hiking Backpacks"
+      "Best Hiking Backpacks",
+      "Best Camping Tents for Beginners"
     ]
   },
-  "next_niche": "sports-outdoors",
-  "last_niche": "fashion-accessories",
+  "next_niche": "home-kitchen",
+  "last_niche": "sports-outdoors",
   "last_article": "best-minimalist-watches-women",
-  "last_date": "2026-09-25"
+  "last_date": "2026-10-05"
 }

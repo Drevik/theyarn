@@ -7,22 +7,15 @@
     "sports-outdoors"
   ],
   "ideas": {
-    "books-writing": [
-      "Pocket Digital Library Workflow Guide",
-      "Best E-Readers for Manga 2026 (trending: color e-ink)",
-      "Best Book Lights for Late Night Reading",
-      "Best Fantasy Doorstopper Novels 2026"
-    ],
+    "books-writing": [],
     "home-kitchen": [
       "Best Japanese Knives for Home Cooks",
-      "Best Countertop Dishwashers",
       "Best Japanese Knives for Home Cooks (Tojiro, MAC, Shun budget picks)",
       "Best Santoku Knives Under $100",
       "Best Kitchen Knife Sets 2026"
     ],
     "wellness": [
       "Best Yoga Mats for Home Practice",
-      "Best Massage Guns for Recovery",
       "Best Hot Yoga Mats 2026 (trending: Adapt 2.0, Manduka PRO)",
       "Best Yoga Mats for Beginners (Gaiam, Iuga Eco)",
       "Best Foam Rollers for Recovery 2026"
@@ -50,36 +43,51 @@
       "E-Reader Ecosystem Comparison (Kindle vs Kobo)",
       "Best Color E-Readers for Manga",
       "pocket-digital-library-guide",
-      "Pocket Digital Library Workflow Guide"
+      "Pocket Digital Library Workflow Guide",
+      "Best Fantasy Doorstopper Novels 2026",
+      "Best E-Readers of 2026 (Kindle Paperwhite, Kobo Clara Colour, Libra Colour)",
+      "Best Fountain Pens for Beginners",
+      "Best Page Turners for Hands-Free Reading (2026)",
+      "best-reading-pillows-for-bed"
     ],
     "home-kitchen": [
       "Best Air Fryers for Small Kitchens",
       "Best Compact Espresso Machines",
       "Best Pour Over Coffee Makers",
       "Best Compact Espresso Machines (Rewrite)",
-      "Best Japanese Knives for Home Cooks"
+      "Best Japanese Knives for Home Cooks",
+      "Best Countertop Dishwashers",
+      "Best Japanese Knives for Home Cooks (Tojiro, MAC, Shun budget picks)"
     ],
     "wellness": [
       "Best Cold Plunge Tubs",
       "Best Adjustable Dumbbells",
       "Best Sauna Blankets",
-      "Best Yoga Mats for Home Practice"
+      "Best Yoga Mats for Home Practice",
+      "Best Massage Guns for Recovery"
     ],
     "fashion-accessories": [
       "Best Silk Pillowcases",
       "Best Weekender Bags for Women",
       "Best Minimalist Watches for Women",
       "Best Silk Scarves for Women",
-      "Best Crossbody Bags for Travel"
+      "Best Crossbody Bags for Travel",
+      "Best Minimalist Jewelry"
     ],
     "sports-outdoors": [
       "Best Camping Chairs",
       "Best Hiking Backpacks",
-      "Best Camping Tents for Beginners"
+      "Best Camping Tents for Beginners",
+      "Best Trail Running Shoes for Beginners"
     ]
   },
-  "next_niche": "home-kitchen",
-  "last_niche": "sports-outdoors",
-  "last_article": "best-minimalist-watches-women",
-  "last_date": "2026-10-05"
+  "next_niche": "books-writing",
+  "last_niche": "home-kitchen",
+  "last_article": "best-trail-running-shoes-for-beginners",
+  "last_date": "2026-10-26",
+  "future_ideas_books_writing": [
+    "Best Book Stands and Holders for Cookbooks and Sheet Music",
+    "Best Audiobook Accessories for Commuters",
+    "Best Library Card Catalogs and Book Storage for Small Apartments"
+  ]
 }

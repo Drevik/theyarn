@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>gumroad-dnd-encounters-bundle — Review Reader | The Yarn</title>
+<meta name="description" content="Internal review copy — not indexed.">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+<header class="site-header">
+        <div class="header-inner">
+            <a href="/" class="logo">The Yarn</a>
+            <ul class="nav-links">
+                <li><a href="/home-kitchen/">Home & Kitchen</a></li>
+                <li><a href="/tech-gadgets/">Tech</a></li>
+                <li><a href="/wellness/">Wellness</a></li>
+                <li><a href="/sports-attire/">Sports</a></li>
+                <li><a href="/fashion-accessories/">Fashion</a></li>
+                <li><a href="/game-guides/">Game Guides</a></li>
+                <li><a href="/about/">About</a></li>
+            </ul>
+        </div>
+    </header>
+<main id="main" style="max-width:760px;margin:2rem auto;padding:0 1rem;">
+  <div class="breadcrumbs"><a href="/">Home</a> › <a href="/review-queue/">Review Queue</a> › RV-0075</div>
+  <h1>gumroad-dnd-encounters-bundle</h1>
+  <div class="article-meta"><span>RV-0075 · pending · submitted 2026-10-20</span></div>
+  <p class='meta'>992 words · gumroad-product · status pending</p>
+  Verdict on the private portal: <a href='http://100.73.57.2:8791/read?rv=RV-0075'>100.73.57.2:8791/read?rv=RV-0075</a> (tailnet devices only)
+  <hr>
+  <hr>
+<p>title: "Gumroad Product: Dnd Encounters Bundle" description: "Gumroad product review for dnd-encounters-bundle" tags: ["gumroad", "product", "review"] slug: "gumroad-dnd-encounters-bundle" pipeline: "gumroad" product_name: "dnd-encounters-bundle" date: "2026-07-28"</p>
+<hr>
+<h1>Gumroad Product Review: Dnd Encounters Bundle</h1>
+<h2>Product Copy (Sales Page)</h2>
+<h2>Product Content</h2>
+<h2>README / Strategy</h2>
+<h1>D&amp;D Encounters Bundle</h1>
+<h2>500 Ready-to-Use Encounter Cards for Dungeon Masters</h2>
+<hr>
+<h3>Product Description</h3>
+<p><strong>The D&amp;D Encounters Bundle</strong> is a curated collection of 500 unique, ready-to-play encounter cards designed for Dungeon Masters who need inspiration at the table. Organized by level tier, terrain, and theme, this bundle eliminates prep time and keeps your game moving.</p>
+<p>Whether you're running a published adventure or a homebrew campaign, simply draw an encounter card that matches your party's level and current terrain—instant content, zero prep.</p>
+<hr>
+<h3>Features</h3>
+<p>✅ <strong>500 Unique Encounters</strong> — No duplicates, no filler ✅ <strong>Organized by Level Tier</strong> — Apprentice (1-4), Heroic (5-10), Paragon (11-16), Epic (17-20) ✅ <strong>12 Terrain Categories</strong> — Forest, Mountain, Desert, Swamp, Arctic, Urban, Underground, Coastal, Plains, Jungle, Volcanic, Astral ✅ <strong>18 Theme Tags</strong> — Ambush, Investigation, Escort, Rescue, Siege, Exploration, Social, Puzzle, Survival, Boss Fight, Chase, Mystery, Ritual, Treasure Hunt, Diplomacy, Haunting, Invasion, Rebellion ✅ <strong>4 Encounter Types</strong> — Combat, Social, Exploration, Skill Challenge ✅ <strong>Instant Integration</strong> — Drop-in encounters for any campaign ✅ <strong>Multiple Formats</strong> — JSON for VTT integration, Markdown for reference</p>
+<hr>
+<h3>What's Included</h3>
+<pre><code>
+dnd-encounters-bundle/
+├── cards/
+│   ├── all_encounters.json        # All 500 encounters in one JSON file
+│   ├── index.json                  # Quick reference index
+│   ├── by-tier/
+│   │   ├── apprentice.md           # Levels 1-4 (125 encounters)
+│   │   ├── heroic.md               # Levels 5-10 (150 encounters)
+│   │   ├── paragon.md              # Levels 11-16 (125 encounters)
+│   │   └── epic.md                 # Levels 17-20 (100 encounters)
+│   ├── by-terrain/
+│   │   ├── forest.md               # ~42 encounters per terrain
+│   │   ├── mountain.md
+│   │   └── ... (12 terrain files)
+│   └── by-theme/
+│       ├── ambush.md               # ~28 encounters per theme
+│       ├── investigation.md
+│       └── ... (18 theme files)
+├── previews/
+│   └── sample_encounters.md        # 10 free sample encounters
+└── README.md
+</code></pre>
+<hr>
+<h3>Encounter Card Format</h3>
+<p>Each encounter card includes:</p>
+<pre><code>
+{
+  "id": "ENC-0042",
+  "title": "Investigation in Forest",
+  "level_range": [1, 4],
+  "tier": "apprentice",
+  "terrain": "forest",
+  "theme": "investigation",
+  "type": "social",
+  "description": "A traveler merchant offers a deal: information for gold in forest terrain.",
+  "setup": "The party encounters this while traveling through forest terrain.",
+  "challenge_rating": "CR 1-4",
+  "xp_range": [100, 600],
+  "difficulty": "medium",
+  "terrain_features": ["ancient ruins", "waterfall", "cave entrance"],
+  "hooks": [
+    "Local rumors speak of a magnetic anomaly in this area.",
+    "A hermit mentioned this location with fear."
+  ]
+}
+</code></pre>
+<hr>
+<h3>Use Cases</h3>
+<p><strong>For Session Prep:</strong></p>
+<ul>
+<li>Browse by terrain to match your party's current location</li>
+<li>Filter by level tier for appropriate challenge</li>
+<li>Pick a theme that advances your plot</li>
+</ul>
+<p><strong>For Improvisation:</strong></p>
+<ul>
+<li>Random encounter? Draw from the appropriate tier</li>
+<li>Need a social encounter? Filter by type</li>
+<li>Unexpected detour? Pull from terrain category</li>
+</ul>
+<p><strong>For VTT Integration:</strong></p>
+<ul>
+<li>Import JSON into Foundry, Roll20, or Fantasy Grounds</li>
+<li>Create encounter tables from categories</li>
+<li>Tag encounters in your notes for quick lookup</li>
+</ul>
+<hr>
+<h3>Sample Encounters</h3>
+<p><strong>ENC-0001: Ambush in Forest (Apprentice)</strong></p>
+<ul>
+<li><em>Type:</em> Combat | <em>CR:</em> 1-4 | <em>Difficulty:</em> Medium</li>
+<li>A pack of wolves emerge in forest while party crosses bridge.</li>
+<li>Terrain features: ancient ruins, waterfall, cave entrance</li>
+<li>Hooks: Local rumors speak of wolves guarding something...</li>
+</ul>
+<p><strong>ENC-0100: Investigation in Urban (Heroic)</strong></p>
+<ul>
+<li><em>Type:</em> Social | <em>CR:</em> 5-10 | <em>Difficulty:</em> Hard</li>
+<li>A noble requests help with a missing heir in the city.</li>
+<li>NPCs involved: 3 | Persuasion DC: 15</li>
+<li>Stakes: Information vital to the party's quest</li>
+</ul>
+<p><strong>ENC-0300: Boss Fight in Underground (Paragon)</strong></p>
+<ul>
+<li><em>Type:</em> Combat | <em>CR:</em> 11-16 | <em>Difficulty:</em> Deadly</li>
+<li>An ancient lich guards a hidden vault in collapsed mines.</li>
+<li>Enemies: lich, undead guardians, constructs</li>
+<li>Loot: Legendary artifact, spellbook, treasure cache</li>
+</ul>
+<hr>
+<h3>Pricing Recommendations</h3>
+<p>| Tier | Price | What's Included | |------|-------|-----------------| | <strong>Preview</strong> | FREE | 10 sample encounters | | <strong>Base Bundle</strong> | $9.99 | All 500 encounters (JSON + Markdown) | | <strong>VTT Bundle</strong> | $19.99 | Base + Foundry module + Roll20 import | | <strong>Complete</strong> | $29.99 | VTT Bundle + random encounter generator script |</p>
+<hr>
+<h3>Target Audience</h3>
+<ul>
+<li><strong>Dungeon Masters</strong> running 5e games</li>
+<li><strong>Content Creators</strong> needing quick encounter ideas</li>
+<li><strong>New DMs</strong> wanting balanced, ready-to-play content</li>
+<li><strong>Experienced DMs</strong> reducing prep time</li>
+<li><strong>VTT Users</strong> wanting import-ready encounters</li>
+</ul>
+<hr>
+<h3>Competitive Advantages</h3>
+<p>✅ <strong>No AI-generated filler</strong> — Every encounter follows a structured template with meaningful content ✅ <strong>Multiple organization methods</strong> — Find by tier, terrain, or theme ✅ <strong>VTT-ready</strong> — JSON format for easy import ✅ <strong>Scalable</strong> — Encounters work across level ranges within tiers ✅ <strong>Instant download</strong> — Start using immediately</p>
+<hr>
+<h3>FAQ</h3>
+<p><strong>Q: Are these balanced for official 5e?</strong> A: Yes, all encounters follow standard 5e CR and XP guidelines.</p>
+<p><strong>Q: Can I use these in my published adventure?</strong> A: Personal use is unrestricted. For commercial use, contact for licensing.</p>
+<p><strong>Q: Do I need specific books to run these?</strong> A: Core 5e books (PHB, MM, DMG) are sufficient. Some encounters reference common monsters.</p>
+<p><strong>Q: Are there maps included?</strong> A: This bundle includes encounter descriptions, not maps. Map bundles sold separately.</p>
+<hr>
+<h3>Version History</h3>
+<p>| Version | Date | Changes | |---------|------|---------| | 1.0 | 2026-07-06 | Initial release with 500 encounters |</p>
+<hr>
+<h3>Support</h3>
+<p>For questions, issues, or feedback:</p>
+<ul>
+<li>Open an issue on GitHub</li>
+<li>Email: support@example.com</li>
+</ul>
+<hr>
+<p><strong>Instant Download — Start Playing Today!</strong></p>
+<h2>Additional Files</h2>
+<h2>context</h2>
+<h1>D&amp;D Encounters Bundle</h1>
+<h2>Purpose</h2>
+<p>D&amp;D encounter products for Gumroad - encounter tables, scenarios, and battle maps.</p>
+<h2>Current Files</h2>
+<ul>
+<li>Encounter bundle product files</li>
+</ul>
+<h2>Skills Wired Here</h2>
+<ul>
+<li><code>dnd-encounter-gen</code>: Encounter generation</li>
+<li><code>affiliate-gumroad-pipeline</code>: Product creation</li>
+</ul>
+<h2>Naming Conventions</h2>
+<ul>
+<li>Products: <code>product-name-vN.md</code></li>
+<li>Assets: <code>asset-name.png</code></li>
+</ul>
+<h2>Related Workspaces</h2>
+<ul>
+<li>Gumroad products: <code>/Gumroad/products/</code></li>
+<li>DnD: <code>/DnD/</code> for content creation</li>
+</ul>
+  <hr>
+  
+</main>
+<footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a href="/" class="logo">The Yarn</a>
+                <p>Honest product recommendations, thoroughly researched. We earn commissions from qualifying purchases — it doesn't affect our picks.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="/home-kitchen/">Home & Kitchen</a></li>
+                    <li><a href="/tech-gadgets/">Tech & Gadgets</a></li>
+                    <li><a href="/wellness/">Wellness</a></li>
+                    <li><a href="/knitting-yarn-beginners/">Knitting & Crafts</a></li>
+                    <li><a href="/sports-attire/">Sports Attire</a></li>
+                    <li><a href="/video-game-deals/">Video Game Deals</a></li>
+                    <li><a href="/fashion-accessories/">Fashion & Accessories</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="/about/">About The Yarn</a></li>
+                    <li><a href="/privacy/">Privacy Policy</a></li>
+                    <li><a href="/disclosure/">Affiliate Disclosure</a></li>
+                    <li><a href="/terms/">Terms of Service</a></li>
+                    <li><a href="/cookies/">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 The Yarn. All rights reserved.</span>
+            <span>As an Amazon Associate, I earn from qualifying purchases.</span>
+        </div>
+    </footer>
+    <!-- The Loom ARG -->
+    <div class="origin-point" style="position:fixed;top:42%;left:58%;width:2px;height:2px;"></div>
+    <div class="emerging-grid"></div>
+    <div id="password-modal" style="display:none;">
+        <div class="password-modal-inner">
+            <p class="password-prompt">Enter passphrase:</p>
+            <input type="text" id="password-input" autocomplete="off" spellcheck="false">
+            <button id="password-submit">Submit</button>
+        </div>
+    </div>
+    <script src="/js/loom.js"></script>
+</body>
+</html>
+</body>
+</html>

@@ -48,7 +48,8 @@
       "Best E-Readers of 2026 (Kindle Paperwhite, Kobo Clara Colour, Libra Colour)",
       "Best Fountain Pens for Beginners",
       "Best Page Turners for Hands-Free Reading (2026)",
-      "best-reading-pillows-for-bed"
+      "best-reading-pillows-for-bed",
+      "Best Book Stands for Cookbooks and Sheet Music"
     ],
     "home-kitchen": [
       "Best Air Fryers for Small Kitchens",
@@ -64,7 +65,8 @@
       "Best Adjustable Dumbbells",
       "Best Sauna Blankets",
       "Best Yoga Mats for Home Practice",
-      "Best Massage Guns for Recovery"
+      "Best Massage Guns for Recovery",
+      "Best Hot Yoga Mats 2026 (trending: Adapt 2.0, Manduka PRO)"
     ],
     "fashion-accessories": [
       "Best Silk Pillowcases",
@@ -81,10 +83,10 @@
       "Best Trail Running Shoes for Beginners"
     ]
   },
-  "next_niche": "books-writing",
-  "last_niche": "home-kitchen",
-  "last_article": "best-trail-running-shoes-for-beginners",
-  "last_date": "2026-10-26",
+  "next_niche": "fashion-accessories",
+  "last_niche": "wellness",
+  "last_article": "best-book-stands-cookbooks-sheet-music",
+  "last_date": "2026-10-27",
   "future_ideas_books_writing": [
     "Best Book Stands and Holders for Cookbooks and Sheet Music",
     "Best Audiobook Accessories for Commuters",

@@ -1075,6 +1075,28 @@ main {
     color: var(--sage-dark);
 }
 
+/* --- FAQ + CTA section styles (added 2026-11-02) --- */
+.faq-section { margin: 2.5rem 0; }
+.faq-item {
+    background: var(--cream);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 0.75rem;
+}
+.faq-item h3 { margin-top: 0; margin-bottom: 0.4rem; }
+.faq-item p { margin-bottom: 0; }
+
+.cta-section {
+    background: var(--sage);
+    color: #fff;
+    padding: 2rem 1.5rem;
+    border-radius: 8px;
+    margin: 2.5rem 0;
+}
+.cta-section h2 { color: #fff; margin-top: 0; }
+.cta-section a { color: var(--gold); font-weight: 700; }
+
 @media (max-width: 480px) {
     .hero-inner { padding: 2rem 1rem; }
     .hero-text h1 { font-size: 1.75rem; }
@@ -1082,4 +1104,5 @@ main {
     .comparison-table { font-size: 0.8rem; }
     .guide-nav { position: static; flex-direction: column; }
     .comparison-table th, .comparison-table td { padding: 0.5rem 0.5rem; }
+    .cta-section { padding: 1.5rem 1rem; }
 }

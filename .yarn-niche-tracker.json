@@ -7,33 +7,34 @@
     "sports-outdoors"
   ],
   "ideas": {
-    "books-writing": [],
+    "books-writing": [
+      "Best Bookends for Heavy Book Collections 2026",
+      "Best Reading Journal and Book Log Notebooks 2026",
+      "Best Page Magnifiers for Low-Vision Readers 2026",
+      "Best Home Library Carts and Book Trolleys 2026",
+      "Best Adjustable Reading Chair Lamps and Book Lights for Seniors"
+    ],
     "home-kitchen": [
-      "Best Japanese Knives for Home Cooks",
-      "Best Japanese Knives for Home Cooks (Tojiro, MAC, Shun budget picks)",
-      "Best Santoku Knives Under $100",
-      "Best Kitchen Knife Sets 2026"
+      "Best Cutting Boards for Knife Care 2026",
+      "Best Knife Sharpeners for Beginner Cooks 2026",
+      "Best Kitchen Drawer Organizers 2026",
+      "Best Coffee Scales for Precision Brewing 2026"
     ],
     "wellness": [
-      "Best Yoga Mats for Home Practice",
-      "Best Hot Yoga Mats 2026 (trending: Adapt 2.0, Manduka PRO)",
-      "Best Yoga Mats for Beginners (Gaiam, Iuga Eco)",
-      "Best Foam Rollers for Recovery 2026"
+      "Best Acupressure Mats and Pillows 2026",
+      "Best Foot Massagers for Plantar Fasciitis 2026",
+      "Best Kettlebell Sets for Small Home Gyms 2026"
     ],
     "fashion-accessories": [
-      "Best Silk Scarves for Women",
-      "Best Crossbody Bags for Travel",
-      "Best Minimalist Jewelry",
-      "Best Silk Scarves for Women 2026 (trending: Tote-me, Longchamp, vintage Etsy) \u2014 covered by live best-silk-scarves-for-women",
-      "How to Style a Silk Scarf \u2014 10 Ways",
-      "Best Affordable Silk Scarves Under $50"
+      "Best Affordable Silk Scarves Under $50",
+      "Best Belt Bag and Sling Crossbodies for Concerts 2026",
+      "Best Everyday Tote Bags for Commuters 2026",
+      "Best Merino Wool Beanies for Winter 2026"
     ],
     "sports-outdoors": [
-      "Best Hiking Backpacks",
-      "Best Camping Tents for Beginners",
-      "Best Hiking Backpacks for Beginners 2026 \u2014 covered by live best-hiking-backpacks-beginners",
-      "Best Trail Running Shoes for Beginners",
-      "Best Cold Plunge Tubs for Home \u2014 covered by live best-cold-plunge-tubs"
+      "Best Trekking Poles for Beginner Hikers 2026",
+      "Best Camping Sleeping Pads for Beginners 2026",
+      "Best Hydration Vests for Trail Runners 2026"
     ]
   },
   "completed": {
@@ -63,7 +64,11 @@
       "Best Countertop Dishwashers",
       "Best Japanese Knives for Home Cooks (Tojiro, MAC, Shun budget picks)",
       "Best Santoku Knives Under $100",
-      "Best Kitchen Knife Sets 2026"
+      "Best Kitchen Knife Sets 2026",
+      "Best Japanese Knives for Home Cooks \u2014 covered by live best-japanese-knives-for-home-cooks / live pages",
+      "Best Japanese Knives for Home Cooks (Tojiro, MAC, Shun budget picks) \u2014 covered by live best-japanese-knives-for-home-cooks / live pages",
+      "Best Santoku Knives Under $100 \u2014 covered by live best-japanese-knives-for-home-cooks / live pages",
+      "Best Kitchen Knife Sets 2026 \u2014 covered by live best-japanese-knives-for-home-cooks / live pages"
     ],
     "wellness": [
       "Best Cold Plunge Tubs",
@@ -74,7 +79,10 @@
       "Best Hot Yoga Mats 2026 (trending: Adapt 2.0, Manduka PRO)",
       "Best Yoga Mats for Beginners (Gaiam, Iuga Eco)",
       "Best Foam Rollers for Recovery",
-      "Best Foam Rollers for Recovery 2026"
+      "Best Foam Rollers for Recovery 2026",
+      "Best Yoga Mats for Home Practice \u2014 covered by live best-yoga-mats-for-home-practice",
+      "Best Hot Yoga Mats 2026 (trending: Adapt 2.0, Manduka PRO) \u2014 covered by live best-hot-yoga-mats-2026-trending-adapt-20-manduka-pro",
+      "Best Yoga Mats for Beginners (Gaiam, Iuga Eco) \u2014 covered by live best-yoga-mats-for-beginners-gaiam-iuga-eco"
     ],
     "fashion-accessories": [
       "Best Silk Pillowcases",
@@ -86,6 +94,11 @@
       "Best Minimalist Jewelry",
       "How to Style a Silk Scarf \u2014 10 Ways",
       "Best Claw Clips for Thick Hair 2026",
+      "Best Silk Scarves for Women \u2014 covered by live best-silk-scarves-for-women",
+      "Best Crossbody Bags for Travel \u2014 covered by live best-crossbody-bags-for-travel",
+      "Best Minimalist Jewelry \u2014 covered by live best-minimalist-jewelry",
+      "Best Silk Scarves for Women 2026 (trending: Tote-me, Longchamp, vintage Etsy) \u2014 covered by live best-silk-scarves-for-women \u2014 covered by live best-silk-scarves-for-women",
+      "How to Style a Silk Scarf \u2014 10 Ways \u2014 covered by live how-to-style-a-silk-scarf-10-ways",
       "Best Affordable Silk Scarves Under $50"
     ],
     "sports-outdoors": [
@@ -94,7 +107,12 @@
       "Best Camping Tents for Beginners",
       "Best Trail Running Shoes for Beginners",
       "Best Hiking Backpacks for Beginners 2026 \u2014 covered by live best-hiking-backpacks-beginners",
-      "Best Cold Plunge Tubs for Home \u2014 covered by live best-cold-plunge-tubs"
+      "Best Cold Plunge Tubs for Home \u2014 covered by live best-cold-plunge-tubs",
+      "Best Hiking Backpacks \u2014 covered by live best-hiking-backpacks",
+      "Best Camping Tents for Beginners \u2014 covered by live best-camping-tents-for-beginners",
+      "Best Hiking Backpacks for Beginners 2026 \u2014 covered by live best-hiking-backpacks-beginners \u2014 covered by live best-hiking-backpacks-beginners",
+      "Best Trail Running Shoes for Beginners \u2014 covered by live best-trail-running-shoes-for-beginners",
+      "Best Cold Plunge Tubs for Home \u2014 covered by live best-cold-plunge-tubs \u2014 covered by live best-cold-plunge-tubs"
     ]
   },
   "next_niche": "sports-outdoors",

@@ -8,7 +8,6 @@
   ],
   "ideas": {
     "books-writing": [
-      "Best Bookends for Heavy Book Collections 2026",
       "Best Reading Journal and Book Log Notebooks 2026",
       "Best Page Magnifiers for Low-Vision Readers 2026",
       "Best Home Library Carts and Book Trolleys 2026",
@@ -53,7 +52,8 @@
       "Best Book Stands for Cookbooks and Sheet Music",
       "Best Audiobook Accessories for Commuters",
       "Best Library Card Catalogs and Book Storage for Small Apartments",
-      "Best Book Repair Kits and Supplies 2026 (best-book-repair-kits-supplies)"
+      "Best Book Repair Kits and Supplies 2026 (best-book-repair-kits-supplies)",
+      "Best Bookends for Heavy Book Collections 2026 (best-bookends-heavy-book-collections)"
     ],
     "home-kitchen": [
       "Best Air Fryers for Small Kitchens",
@@ -68,7 +68,8 @@
       "Best Japanese Knives for Home Cooks \u2014 covered by live best-japanese-knives-for-home-cooks / live pages",
       "Best Japanese Knives for Home Cooks (Tojiro, MAC, Shun budget picks) \u2014 covered by live best-japanese-knives-for-home-cooks / live pages",
       "Best Santoku Knives Under $100 \u2014 covered by live best-japanese-knives-for-home-cooks / live pages",
-      "Best Kitchen Knife Sets 2026 \u2014 covered by live best-japanese-knives-for-home-cooks / live pages"
+      "Best Kitchen Knife Sets 2026 \u2014 covered by live best-japanese-knives-for-home-cooks / live pages",
+      "Best Cutting Boards for Knife Care 2026"
     ],
     "wellness": [
       "Best Cold Plunge Tubs",
@@ -116,10 +117,10 @@
       "Best Trekking Poles for Beginner Hikers 2026"
     ]
   },
-  "next_niche": "home-kitchen",
-  "last_niche": "sports-outdoors",
-  "last_article": "best-book-repair-kits-supplies",
-  "last_date": "2026-11-05",
+  "next_niche": "books-writing",
+  "last_niche": "home-kitchen",
+  "last_article": "best-bookends-heavy-book-collections",
+  "last_date": "2026-11-06",
   "future_ideas_books_writing": [
     "Best Book Stands and Holders for Cookbooks and Sheet Music",
     "Best Library Card Catalogs and Book Storage for Small Apartments \u2014 covered by live best-library-card-catalogs-small-apartments"

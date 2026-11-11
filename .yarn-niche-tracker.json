@@ -8,8 +8,6 @@
   ],
   "ideas": {
     "books-writing": [
-      "Best Reading Journal and Book Log Notebooks 2026",
-      "Best Page Magnifiers for Low-Vision Readers 2026",
       "Best Home Library Carts and Book Trolleys 2026",
       "Best Adjustable Reading Chair Lamps and Book Lights for Seniors"
     ],
@@ -54,7 +52,8 @@
       "Best Library Card Catalogs and Book Storage for Small Apartments",
       "Best Book Repair Kits and Supplies 2026 (best-book-repair-kits-supplies)",
       "Best Bookends for Heavy Book Collections 2026 (best-bookends-heavy-book-collections)",
-      "Best Reading Journal and Book Log Notebooks 2026"
+      "Best Reading Journal and Book Log Notebooks 2026",
+      "Best Page Magnifiers for Low-Vision Readers 2026 (best-page-magnifiers-low-vision-readers)"
     ],
     "home-kitchen": [
       "Best Air Fryers for Small Kitchens",
@@ -102,7 +101,8 @@
       "Best Minimalist Jewelry \u2014 covered by live best-minimalist-jewelry",
       "Best Silk Scarves for Women 2026 (trending: Tote-me, Longchamp, vintage Etsy) \u2014 covered by live best-silk-scarves-for-women \u2014 covered by live best-silk-scarves-for-women",
       "How to Style a Silk Scarf \u2014 10 Ways \u2014 covered by live how-to-style-a-silk-scarf-10-ways",
-      "Best Affordable Silk Scarves Under $50"
+      "Best Affordable Silk Scarves Under $50",
+      "Best Belt Bag and Sling Crossbodies for Concerts 2026"
     ],
     "sports-outdoors": [
       "Best Camping Chairs",
@@ -116,13 +116,14 @@
       "Best Hiking Backpacks for Beginners 2026 \u2014 covered by live best-hiking-backpacks-beginners \u2014 covered by live best-hiking-backpacks-beginners",
       "Best Trail Running Shoes for Beginners \u2014 covered by live best-trail-running-shoes-for-beginners",
       "Best Cold Plunge Tubs for Home \u2014 covered by live best-cold-plunge-tubs \u2014 covered by live best-cold-plunge-tubs",
-      "Best Trekking Poles for Beginner Hikers 2026"
+      "Best Trekking Poles for Beginner Hikers 2026",
+      "Best Camping Sleeping Pads for Beginners 2026"
     ]
   },
-  "next_niche": "fashion-accessories",
-  "last_niche": "wellness",
-  "last_article": "best-bookends-heavy-book-collections",
-  "last_date": "2026-11-10",
+  "next_niche": "home-kitchen",
+  "last_niche": "sports-outdoors",
+  "last_article": "best-page-magnifiers-low-vision-readers",
+  "last_date": "2026-11-11",
   "future_ideas_books_writing": [
     "Best Book Stands and Holders for Cookbooks and Sheet Music",
     "Best Library Card Catalogs and Book Storage for Small Apartments \u2014 covered by live best-library-card-catalogs-small-apartments"
